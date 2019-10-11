@@ -1,0 +1,11 @@
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.Properties.Resources.resources
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.csproj.GenerateResource.Cache
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmLogin.resources
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmRegister.resources
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\bin\Debug\MIMIC.exe.config
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\bin\Debug\MIMIC.exe
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\bin\Debug\MIMIC.pdb
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\bin\Debug\Mono.Security.dll
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\bin\Debug\Npgsql.dll
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.exe
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.pdb

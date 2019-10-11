@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\MIMICIII-information-management-system\MimicWebService\setup" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/Mono.Security.dll" publishTime="09/24/2019 17:07:33" />
+    <file relUrl="bin/Npgsql.dll" publishTime="09/24/2019 17:07:33" />
+    <file relUrl="bin/MimicWebService.dll" publishTime="10/11/2019 13:19:32" />
+    <file relUrl="Web.config" publishTime="10/11/2019 13:19:37" />
+    <file relUrl="bin/MimicWebService.pdb" publishTime="10/11/2019 13:19:32" />
+    <file relUrl="UserinfoService.asmx" publishTime="10/04/2019 15:21:58" />
+  </publishProfile>
+</publishData>
