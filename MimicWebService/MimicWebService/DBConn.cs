@@ -6,7 +6,7 @@ using Npgsql;
 using System.Data;
 
 
-namespace stuSysWebService
+namespace MimicWebService
 {
     public class DBConn
     {

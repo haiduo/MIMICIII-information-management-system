@@ -6,7 +6,7 @@ using System.Web.Services;
 using System.Configuration;
 using Npgsql;
 
-namespace stuSysWebService
+namespace MimicWebService
 {
     /// <summary>
     /// UserinfoService 的摘要说明

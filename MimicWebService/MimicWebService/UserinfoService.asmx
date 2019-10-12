@@ -1,1 +1,1 @@
-﻿<%@ WebService Language="C#" CodeBehind="UserinfoService.asmx.cs" Class="stuSysWebService.UserinfoService" %>
+﻿<%@ WebService Language="C#" CodeBehind="UserinfoService.asmx.cs" Class="MimicWebService.UserinfoService" %>

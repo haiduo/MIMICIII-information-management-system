@@ -9,3 +9,8 @@ D:\MIMICIII-information-management-system\MIMIC\MIMIC\bin\Debug\Mono.Security.dl
 D:\MIMICIII-information-management-system\MIMIC\MIMIC\bin\Debug\Npgsql.dll
 D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.exe
 D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.pdb
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmHome.resources
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmMain.resources
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmMenu.resources
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmPatientsSearch.resources
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll
