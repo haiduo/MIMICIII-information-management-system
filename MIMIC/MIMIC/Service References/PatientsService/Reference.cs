@@ -22,7 +22,7 @@ namespace MIMIC.PatientsService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SelectPatients", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        MIMIC.PatientsService.Patients SelectPatients(MIMIC.PatientsService.Patients patients);
+        System.Data.DataTable SelectPatients(MIMIC.PatientsService.Patients patients);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchPatients", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -428,7 +428,7 @@ namespace MIMIC.PatientsService {
             return base.Channel.HelloWorld();
         }
         
-        public MIMIC.PatientsService.Patients SelectPatients(MIMIC.PatientsService.Patients patients) {
+        public System.Data.DataTable SelectPatients(MIMIC.PatientsService.Patients patients) {
             return base.Channel.SelectPatients(patients);
         }
         

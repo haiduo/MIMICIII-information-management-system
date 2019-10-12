@@ -1,6 +1,6 @@
 ﻿namespace MIMIC
 {
-    partial class FrmPatientsSearch
+    partial class FrmPatientsSelect_Search
     {
         /// <summary>
         /// Required designer variable.
@@ -93,8 +93,8 @@
             this.DGViewPatients.Location = new System.Drawing.Point(0, 0);
             this.DGViewPatients.Name = "DGViewPatients";
             this.DGViewPatients.ReadOnly = true;
-            this.DGViewPatients.Size = new System.Drawing.Size(1370, 470);
-            this.DGViewPatients.TabIndex = 0;
+            this.DGViewPatients.Size = new System.Drawing.Size(923, 457);
+            this.DGViewPatients.TabIndex = 1;
             // 
             // subject_id
             // 
@@ -296,16 +296,16 @@
             this.has_chartevents_data.ReadOnly = true;
             this.has_chartevents_data.ToolTipText = "是否有图表数据";
             // 
-            // FrmPatientsSearch
+            // FrmPatientsSelect_Search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 470);
+            this.ClientSize = new System.Drawing.Size(923, 457);
             this.Controls.Add(this.DGViewPatients);
-            this.Name = "FrmPatientsSearch";
-            this.TabText = "病人查询";
-            this.Text = "病人查询";
-            this.Load += new System.EventHandler(this.FrmStuSearch_Load);
+            this.Name = "FrmPatientsSelect_Search";
+            this.TabText = "FrmPatientsSelect_Search";
+            this.Text = "FrmPatientsSelect_Search";
+            this.Load += new System.EventHandler(this.FrmPatientsSelect_Search_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGViewPatients)).EndInit();
             this.ResumeLayout(false);
 

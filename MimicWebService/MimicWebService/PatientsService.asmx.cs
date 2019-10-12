@@ -24,63 +24,62 @@ namespace MimicWebService
         {
             return "Hello World";
         }
+
+        /// <summary>
+        /// 根据关键字查询病人信息
+        /// </summary>
+        /// <param name="patients"></param>
+        /// <returns></returns>
         [WebMethod]
-        public Patients SelectPatients(Patients patients)
+        public DataTable SelectPatients(Patients patients)
         {
             DBConn dbconn = new DBConn();//实例化连接数据库的对象
-            string strSQL = "set search_path to mimiciii;SELECT * FROM patients,admissions WHERE subject_id ='" + patients.subject_id + "'";
-            NpgsqlCommand comm = new NpgsqlCommand(strSQL, dbconn.OpenConn()); //调用对象的打开数据库方法并实例化NpsqlCommand对象
-            NpgsqlDataReader dr = comm.ExecuteReader();//执行SQL语句
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"set search_path to mimiciii;
+              SELECT p.subject_id,a.hadm_id, a.insurance,language, gender,round((cast(a.admittime as date) - cast(p.dob as date)) / 365.2 ) as age,religion,
+                    marital_status,ethnicity,dob,dod,dod_hosp,dod_ssn,expire_flag,admittime,dischtime,deathtime,admission_type,admission_location,discharge_location,edregtime,
+                    edouttime,diagnosis,hospital_expire_flag,has_chartevents_data
+                FROM patients p INNER JOIN admissions a ON p.subject_id = a.subject_id
+                WHERE p.subject_id='" + patients.subject_id + @"'
+                    AND gender = '" + patients.gender + @"'
+                    AND round((cast(a.admittime as date) - cast(p.dob as date)) / 365.2 )  ='" + patients.age + @"'
+                    AND  diagnosis LIKE '%" + patients.diagnosis + @"%'
 
-            if (dr.Read())//如果能前进到下一条，说明有数据
-            {
-                patients.subject_id = int.Parse(dr["subject_id"].ToString());
-                patients.hadm_id = int.Parse(dr["hadm_id"].ToString());
-                patients.insurance = dr["insurance"].ToString();
-                patients.language = dr["language"].ToString();
-                patients.gender = dr["gender"].ToString();
-                patients.age = int.Parse(dr["age"].ToString());
-                patients.religion = dr["religion"].ToString();
-                patients.marital_status = dr["marital_status"].ToString();
+                ORDER BY subject_id";
 
-                patients.ethnicity = dr["ethnicity"].ToString();
-                patients.dob = dr["dob"].ToString();
-                patients.dod = dr["dod"].ToString();
-                patients.dod_hosp = dr["dod_hosp"].ToString();
-                patients.dod_ssn = dr["dod_ssn"].ToString();
-                patients.expire_flag = int.Parse(dr["expire_flag"].ToString());
-                patients.admittime = dr["admittime"].ToString();
-                patients.dischtime = dr["dischtime"].ToString();
-                patients.deathtime = dr["deathtime"].ToString();
-                patients.admission_type = dr["admission_type"].ToString();
 
-                patients.admission_location = dr["admission_location"].ToString();
-                patients.discharge_location = dr["discharge_loaction"].ToString();
-                patients.edregtime = dr["edregtime"].ToString();
-                patients.edouttime = dr["edouttime"].ToString();
-                patients.diagnosis = dr["diagnosis"].ToString();
-                patients.hospital_expire_flag = int.Parse(dr["hospital_expire_flag"].ToString());
-                patients.has_chartevents_data = int.Parse(dr["has_chartevents_data"].ToString());
+             //       OR  hospital_expire_flag='" + patients.hospital_expire_flag + @"',
 
-                dr.Close();//NpgsqlDataReader对象使用完后，必须Close掉
-                return patients;
-            }
-            dr.Close();//NpgsqlDataReader对象使用完后，必须Close掉
-            return null;
+            //                    OR ethnicity = '" + patients.ethnicity + @"',  
+            //                    OR expire_flag='" + patients.expire_flag + @"',
+            //                    OR admittime='" + patients.admittime + @"',
 
+            //                    OR  has_chartevents_data='" + patients.has_chartevents_data + @"'
+
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
         }
 
+        /// <summary>
+        /// 显示所有病人信息
+        /// </summary>
+        /// <returns></returns>
         [WebMethod]
         public DataTable SearchPatients()
         {
             DBConn dbconn = new DBConn();//实例化连接数据库的对象
             NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
             string strSQL = @"set search_path to mimiciii;SELECT p.subject_id,a.hadm_id, a.insurance,language, 
-gender,((cast(a.admittime as date) - cast(p.dob as date)) / 365.2 ) as age,religion, 
-marital_status,ethnicity,dob,dod,dod_hosp,dod_ssn,expire_flag,admittime,dischtime,deathtime,admission_type,
-admission_location,discharge_location,edregtime,edouttime,diagnosis,hospital_expire_flag,has_chartevents_data
-                   FROM patients p INNER JOIN admissions a ON p.subject_id = a.subject_id
-ORDER BY subject_id";
+                gender,ROUND((cast(a.admittime as date) - cast(p.dob as date)) / 365.2 ) as age,religion, 
+                marital_status,ethnicity,dob,dod,dod_hosp,dod_ssn,expire_flag,admittime,dischtime,deathtime,admission_type,
+                admission_location,discharge_location,edregtime,edouttime,diagnosis,hospital_expire_flag,has_chartevents_data
+                                   FROM patients p INNER JOIN admissions a ON p.subject_id = a.subject_id
+                ORDER BY subject_id";
             //执行SQL语句
             DataTable dt = new DataTable();
             DataSet ds = new DataSet();

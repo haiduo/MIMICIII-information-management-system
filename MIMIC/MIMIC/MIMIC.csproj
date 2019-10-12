@@ -95,6 +95,12 @@
     <Compile Include="FrmMenu.designer.cs">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPatientsSelect_Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPatientsSelect_Search.Designer.cs">
+      <DependentUpon>FrmPatientsSelect_Search.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,12 @@
     </Compile>
     <Compile Include="FrmPatientsSearch.designer.cs">
       <DependentUpon>FrmPatientsSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPatientsSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPatientsSelect.designer.cs">
+      <DependentUpon>FrmPatientsSelect.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -131,11 +143,17 @@
     <EmbeddedResource Include="FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmPatientsSelect_Search.resx">
+      <DependentUpon>FrmPatientsSelect_Search.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmRegister.resx">
       <DependentUpon>FrmRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPatientsSearch.resx">
       <DependentUpon>FrmPatientsSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPatientsSelect.resx">
+      <DependentUpon>FrmPatientsSelect.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -159,9 +177,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Service References\PatientsService\MIMIC.PatientsService.Patients.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
     <None Include="Service References\PatientsService\PatientsService.wsdl" />
     <None Include="Service References\UserinfoService\UserinfoService.wsdl" />
   </ItemGroup>

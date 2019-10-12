@@ -14,3 +14,5 @@ D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmMai
 D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmMenu.resources
 D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmPatientsSearch.resources
 D:\MIMICIII-information-management-system\MIMIC\MIMIC\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmPatientsSelect.resources
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmPatientsSelect_Search.resources

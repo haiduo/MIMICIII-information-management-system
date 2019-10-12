@@ -29,24 +29,25 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenu));
-            this.lblPatientsAdd = new System.Windows.Forms.Label();
+            this.lblPatientsSelect = new System.Windows.Forms.Label();
             this.lblPatientsSearch = new System.Windows.Forms.Label();
             this.lblicuAdd = new System.Windows.Forms.Label();
             this.lblicusearch = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // lblPatientsAdd
+            // lblPatientsSelect
             // 
-            this.lblPatientsAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblPatientsAdd.ForeColor = System.Drawing.Color.Black;
-            this.lblPatientsAdd.Image = ((System.Drawing.Image)(resources.GetObject("lblPatientsAdd.Image")));
-            this.lblPatientsAdd.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblPatientsAdd.Location = new System.Drawing.Point(18, 40);
-            this.lblPatientsAdd.Name = "lblPatientsAdd";
-            this.lblPatientsAdd.Size = new System.Drawing.Size(60, 55);
-            this.lblPatientsAdd.TabIndex = 0;
-            this.lblPatientsAdd.Text = "精确查询";
-            this.lblPatientsAdd.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lblPatientsSelect.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblPatientsSelect.ForeColor = System.Drawing.Color.Black;
+            this.lblPatientsSelect.Image = ((System.Drawing.Image)(resources.GetObject("lblPatientsSelect.Image")));
+            this.lblPatientsSelect.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblPatientsSelect.Location = new System.Drawing.Point(18, 40);
+            this.lblPatientsSelect.Name = "lblPatientsSelect";
+            this.lblPatientsSelect.Size = new System.Drawing.Size(60, 55);
+            this.lblPatientsSelect.TabIndex = 0;
+            this.lblPatientsSelect.Text = "精确查询";
+            this.lblPatientsSelect.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lblPatientsSelect.Click += new System.EventHandler(this.lblPatientsSelect_Click);
             // 
             // lblPatientsSearch
             // 
@@ -93,7 +94,7 @@
             this.Controls.Add(this.lblicusearch);
             this.Controls.Add(this.lblicuAdd);
             this.Controls.Add(this.lblPatientsSearch);
-            this.Controls.Add(this.lblPatientsAdd);
+            this.Controls.Add(this.lblPatientsSelect);
             this.Name = "FrmMenu";
             this.TabText = "菜单栏";
             this.Text = "菜单栏";
@@ -103,7 +104,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblPatientsAdd;
+        private System.Windows.Forms.Label lblPatientsSelect;
         private System.Windows.Forms.Label lblPatientsSearch;
         private System.Windows.Forms.Label lblicuAdd;
         private System.Windows.Forms.Label lblicusearch;

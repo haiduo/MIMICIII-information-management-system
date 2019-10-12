@@ -17,6 +17,12 @@ namespace MIMIC
             InitializeComponent();
         }
 
+        private void lblPatientsSelect_Click(object sender, EventArgs e)
+        {
+            FrmPatientsSelect select = new FrmPatientsSelect();//实例化子窗体
+            OpenForm(select);
+        }
+
         private void lblPatientsSearch_Click(object sender, EventArgs e)
         {
             FrmPatientsSearch search = new FrmPatientsSearch();//实例化子窗体
@@ -40,7 +46,5 @@ namespace MIMIC
             frm.Show(main.dockPanel1);//与上句代码效果一样
 
         }
-
-
     }
 }
