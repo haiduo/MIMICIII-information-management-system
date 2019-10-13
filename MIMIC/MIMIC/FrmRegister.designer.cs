@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegister));
             this.txtPwd = new System.Windows.Forms.TextBox();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.IbIPwd = new System.Windows.Forms.Label();
@@ -149,6 +150,7 @@
             this.Controls.Add(this.IbIPwd);
             this.Controls.Add(this.lblIp_addr);
             this.Controls.Add(this.lbIUser);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmRegister";
             this.Text = "注册";

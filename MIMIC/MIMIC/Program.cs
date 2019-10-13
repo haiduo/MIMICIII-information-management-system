@@ -13,8 +13,8 @@ namespace MIMIC
 		[STAThread]
 		static void Main()
 		{
-            //Application.EnableVisualStyles();
-            //Application.SetCompatibleTextRenderingDefault(false);
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
             //FrmLogin frmlogin = new FrmLogin();
             //if (frmlogin.ShowDialog() == DialogResult.OK)
             //{

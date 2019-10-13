@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPatientsSearch));
             this.DGViewPatients = new System.Windows.Forms.DataGridView();
             this.subject_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hadm_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -302,6 +303,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 470);
             this.Controls.Add(this.DGViewPatients);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPatientsSearch";
             this.TabText = "病人查询";
             this.Text = "病人查询";

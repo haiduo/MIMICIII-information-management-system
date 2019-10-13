@@ -4,3 +4,4 @@ D:\MIMICIII-information-management-system\MimicWebService\MimicWebService\bin\Mo
 D:\MIMICIII-information-management-system\MimicWebService\MimicWebService\bin\Npgsql.dll
 D:\MIMICIII-information-management-system\MimicWebService\MimicWebService\obj\Debug\MimicWebService.dll
 D:\MIMICIII-information-management-system\MimicWebService\MimicWebService\obj\Debug\MimicWebService.pdb
+D:\MIMICIII-information-management-system\MimicWebService\MimicWebService\obj\Debug\MimicWebService.csprojResolveAssemblyReference.cache

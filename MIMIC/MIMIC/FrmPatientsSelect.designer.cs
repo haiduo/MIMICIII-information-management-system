@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPatientsSelect));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lblhas_chartevents_data = new System.Windows.Forms.Label();
             this.lbldiagnosis = new System.Windows.Forms.Label();
@@ -327,6 +328,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(640, 538);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPatientsSelect";
             this.TabText = "关键字查询病人";
             this.Text = "关键字查询病人";

@@ -70,14 +70,14 @@
             // 
             this.toolStripMenuItemPatientsManager.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItemPatientsManager.Image")));
             this.toolStripMenuItemPatientsManager.Name = "toolStripMenuItemPatientsManager";
-            this.toolStripMenuItemPatientsManager.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItemPatientsManager.Size = new System.Drawing.Size(124, 22);
             this.toolStripMenuItemPatientsManager.Text = "病人管理";
             // 
             // toolStripMenuItemPatients_Search
             // 
             this.toolStripMenuItemPatients_Search.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItemPatients_Search.Image")));
             this.toolStripMenuItemPatients_Search.Name = "toolStripMenuItemPatients_Search";
-            this.toolStripMenuItemPatients_Search.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItemPatients_Search.Size = new System.Drawing.Size(124, 22);
             this.toolStripMenuItemPatients_Search.Text = "病人查询";
             // 
             // toolStripMenuItemICU_Info
@@ -93,14 +93,14 @@
             // 
             this.toolStripMenuItemICU_Add.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItemICU_Add.Image")));
             this.toolStripMenuItemICU_Add.Name = "toolStripMenuItemICU_Add";
-            this.toolStripMenuItemICU_Add.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItemICU_Add.Size = new System.Drawing.Size(121, 22);
             this.toolStripMenuItemICU_Add.Text = "ICU管理";
             // 
             // toolStripMenuItemICU_Search
             // 
             this.toolStripMenuItemICU_Search.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItemICU_Search.Image")));
             this.toolStripMenuItemICU_Search.Name = "toolStripMenuItemICU_Search";
-            this.toolStripMenuItemICU_Search.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItemICU_Search.Size = new System.Drawing.Size(121, 22);
             this.toolStripMenuItemICU_Search.Text = "ICU查询";
             // 
             // toolStripMenuItem1
@@ -152,11 +152,12 @@
             this.Controls.Add(this.dockPanel1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "学生信息管理系统";
+            this.Text = "病人信息管理系统";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.menuStrip.ResumeLayout(false);
