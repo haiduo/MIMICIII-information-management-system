@@ -40,21 +40,16 @@ namespace MimicWebService
                     marital_status,ethnicity,dob,dod,dod_hosp,dod_ssn,expire_flag,admittime,dischtime,deathtime,admission_type,admission_location,discharge_location,edregtime,
                     edouttime,diagnosis,hospital_expire_flag,has_chartevents_data
                 FROM patients p INNER JOIN admissions a ON p.subject_id = a.subject_id
-                WHERE p.subject_id='" + patients.subject_id + @"'
-                    AND gender = '" + patients.gender + @"'
-                    AND round((cast(a.admittime as date) - cast(p.dob as date)) / 365.2 )  ='" + patients.age + @"'
+                WHERE cast(p.subject_id as varchar) LIKE '%" + patients.subject_id + @"%'
+                    AND LOWER(gender)LIKE '%" + patients.gender + @"%'
+                    AND cast(round((cast(a.admittime as date) - cast(p.dob as date)) / 365.2 ) as varchar) LIKE '%" + patients.age + @"%'
+                    AND LOWER(ethnicity) LIKE '%" + patients.ethnicity + @"%' 
+                    AND cast(expire_flag as varchar) LIKE '%" + patients.expire_flag + @"%'
+                    AND cast(admittime as varchar) LIKE '%" + patients.admittime + @"%'
+                    AND cast(hospital_expire_flag as varchar)LIKE '%" + patients.hospital_expire_flag + @"%'
                     AND  diagnosis LIKE '%" + patients.diagnosis + @"%'
-
-                ORDER BY subject_id";
-
-
-             //       OR  hospital_expire_flag='" + patients.hospital_expire_flag + @"',
-
-            //                    OR ethnicity = '" + patients.ethnicity + @"',  
-            //                    OR expire_flag='" + patients.expire_flag + @"',
-            //                    OR admittime='" + patients.admittime + @"',
-
-            //                    OR  has_chartevents_data='" + patients.has_chartevents_data + @"'
+                    AND cast(has_chartevents_data as varchar) LIKE '%" + patients.has_chartevents_data + @"%'
+                ORDER BY p.subject_id,a.hadm_id";
 
             //执行SQL语句
             DataTable dt = new DataTable();
@@ -97,11 +92,11 @@ namespace MimicWebService
             /// <summary>
             /// 病人标识
             /// </summary>
-            public int subject_id { get; set; } //属性自动生成输入prop然后按下Tab键，修改类型，再Tab键修改属性名
+            public string  subject_id { get; set; } //属性自动生成输入prop然后按下Tab键，修改类型，再Tab键修改属性名
             /// <summary>
             /// 入院记录标识
             /// </summary>
-            public int hadm_id { get; set; }
+            public string hadm_id { get; set; }
             /// <summary>
             /// 保险类型
             /// </summary>
@@ -117,7 +112,7 @@ namespace MimicWebService
             /// <summary>
             /// 入院时年龄
             /// </summary>
-            public int age { get; set; }
+            public string age { get; set; }
             /// <summary>
             /// 宗教信仰
             /// </summary>
@@ -149,7 +144,7 @@ namespace MimicWebService
             /// <summary>
             /// 病人是否死亡
             /// </summary>
-            public int expire_flag { get; set; }
+            public string expire_flag { get; set; }
             /// <summary>
             /// 入院时间
             /// </summary>
@@ -189,11 +184,11 @@ namespace MimicWebService
             /// <summary>
             /// 住院期间是否死亡
             /// </summary>
-            public int hospital_expire_flag { get; set; }
+            public string hospital_expire_flag { get; set; }
             /// <summary>
             /// 是否有图表数据
             /// </summary>
-            public int has_chartevents_data { get; set; }
+            public string has_chartevents_data { get; set; }
         }
     }
     

@@ -37,9 +37,9 @@ namespace MIMIC.PatientsService {
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
     public partial class Patients : object, System.ComponentModel.INotifyPropertyChanged {
         
-        private int subject_idField;
+        private string subject_idField;
         
-        private int hadm_idField;
+        private string hadm_idField;
         
         private string insuranceField;
         
@@ -47,7 +47,7 @@ namespace MIMIC.PatientsService {
         
         private string genderField;
         
-        private int ageField;
+        private string ageField;
         
         private string religionField;
         
@@ -63,7 +63,7 @@ namespace MIMIC.PatientsService {
         
         private string dod_ssnField;
         
-        private int expire_flagField;
+        private string expire_flagField;
         
         private string admittimeField;
         
@@ -83,13 +83,13 @@ namespace MIMIC.PatientsService {
         
         private string diagnosisField;
         
-        private int hospital_expire_flagField;
+        private string hospital_expire_flagField;
         
-        private int has_chartevents_dataField;
+        private string has_chartevents_dataField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public int subject_id {
+        public string subject_id {
             get {
                 return this.subject_idField;
             }
@@ -101,7 +101,7 @@ namespace MIMIC.PatientsService {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public int hadm_id {
+        public string hadm_id {
             get {
                 return this.hadm_idField;
             }
@@ -149,7 +149,7 @@ namespace MIMIC.PatientsService {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Order=5)]
-        public int age {
+        public string age {
             get {
                 return this.ageField;
             }
@@ -245,7 +245,7 @@ namespace MIMIC.PatientsService {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Order=13)]
-        public int expire_flag {
+        public string expire_flag {
             get {
                 return this.expire_flagField;
             }
@@ -365,7 +365,7 @@ namespace MIMIC.PatientsService {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Order=23)]
-        public int hospital_expire_flag {
+        public string hospital_expire_flag {
             get {
                 return this.hospital_expire_flagField;
             }
@@ -377,7 +377,7 @@ namespace MIMIC.PatientsService {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Order=24)]
-        public int has_chartevents_data {
+        public string has_chartevents_data {
             get {
                 return this.has_chartevents_dataField;
             }

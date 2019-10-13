@@ -288,7 +288,6 @@
             this.txthas_chartevents_data.Margin = new System.Windows.Forms.Padding(1);
             this.txthas_chartevents_data.MaxLength = 20;
             this.txthas_chartevents_data.Name = "txthas_chartevents_data";
-            this.txthas_chartevents_data.PasswordChar = '*';
             this.txthas_chartevents_data.Size = new System.Drawing.Size(244, 20);
             this.txthas_chartevents_data.TabIndex = 1;
             // 
