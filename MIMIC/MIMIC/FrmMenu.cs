@@ -28,6 +28,18 @@ namespace MIMIC
             FrmPatientsSearch search = new FrmPatientsSearch();//实例化子窗体
             OpenForm(search);
         }
+    
+        private void lblicuSelect_Click(object sender, EventArgs e)
+        {
+            FrmICUPatientsSelect icu_select = new FrmICUPatientsSelect();
+            OpenForm(icu_select);
+        }
+
+        private void lblicuSearch_Click(object sender, EventArgs e)
+        {
+            FrmICUPatientsSearch icu_search = new FrmICUPatientsSearch();
+            OpenForm(icu_search);
+        }
 
         private void OpenForm(DockContent frm)
         {
@@ -46,5 +58,6 @@ namespace MIMIC
             frm.Show(main.dockPanel1);//与上句代码效果一样
 
         }
+
     }
 }

@@ -77,6 +77,24 @@
     <Compile Include="FrmHome.designer.cs">
       <DependentUpon>FrmHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmICUPatientsSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmICUPatientsSearch.Designer.cs">
+      <DependentUpon>FrmICUPatientsSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmICUPatientsSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmICUPatientsSelect.Designer.cs">
+      <DependentUpon>FrmICUPatientsSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmICUPatientsSelect_Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmICUPatientsSelect_Search.Designer.cs">
+      <DependentUpon>FrmICUPatientsSelect_Search.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +151,15 @@
     </Compile>
     <EmbeddedResource Include="FrmHome.resx">
       <DependentUpon>FrmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmICUPatientsSearch.resx">
+      <DependentUpon>FrmICUPatientsSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmICUPatientsSelect.resx">
+      <DependentUpon>FrmICUPatientsSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmICUPatientsSelect_Search.resx">
+      <DependentUpon>FrmICUPatientsSelect_Search.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

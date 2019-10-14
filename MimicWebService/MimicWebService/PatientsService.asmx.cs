@@ -74,7 +74,55 @@ namespace MimicWebService
                 marital_status,ethnicity,dob,dod,dod_hosp,dod_ssn,expire_flag,admittime,dischtime,deathtime,admission_type,
                 admission_location,discharge_location,edregtime,edouttime,diagnosis,hospital_expire_flag,has_chartevents_data
                                    FROM patients p INNER JOIN admissions a ON p.subject_id = a.subject_id
-                ORDER BY subject_id";
+                ORDER BY p.subject_id,a.hadm_id";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        [WebMethod]
+        public DataTable ICUSelectPatients(Patients patients)
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"set search_path to mimiciii;
+              SELECT p.subject_id,a.hadm_id,i.icustay_id , gender,first_careunit,last_careunit,intime,outtime,los
+              FROM icustays i INNER JOIN admissions a ON i.hadm_id = a.hadm_id
+                              INNER JOIN patients p ON i.subject_id =p.subject_id
+                WHERE cast(p.subject_id as varchar) LIKE '%" + patients.subject_id + @"%'
+                    AND cast(a.hadm_id as varchar) LIKE '%" + patients.hadm_id + @"%'
+                    AND cast(i.icustay_id as varchar) LIKE '%" + patients.icustay_id + @"%'
+                    AND LOWER(gender)LIKE '%" + patients.gender + @"%'
+                    AND first_careunit  LIKE '%" + patients.first_careunit + @"%'
+                    AND last_careunit   LIKE '%" + patients.last_careunit + @"%'
+                    AND cast(intime as varchar)LIKE '%" + patients.intime + @"%'
+                    AND cast(outtime as varchar)LIKE '%" + patients.outtime + @"%'
+                    AND cast(los as varchar)LIKE '%" + patients.intime + @"%'
+                ORDER BY p.subject_id,a.hadm_id,i.icustay_id";
+
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        [WebMethod]
+        public DataTable SearchICUPatients()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"set search_path to mimiciii;SELECT p.subject_id,a.hadm_id,i.icustay_id , 
+                gender,first_careunit,last_careunit,intime,outtime,los
+                                   FROM icustays i INNER JOIN admissions a ON i.hadm_id = a.hadm_id
+                                                   INNER JOIN patients p ON i.subject_id =p.subject_id
+                ORDER BY p.subject_id,a.hadm_id,i.icustay_id";
             //执行SQL语句
             DataTable dt = new DataTable();
             DataSet ds = new DataSet();
@@ -97,6 +145,30 @@ namespace MimicWebService
             /// 入院记录标识
             /// </summary>
             public string hadm_id { get; set; }
+            /// <summary>
+            /// 入ICU记录标识
+            /// </summary>
+            public string icustay_id { get; set; }
+            /// <summary>
+            /// 给予患者的第一种护理
+            /// </summary>
+            public string first_careunit { get; set; }
+            /// <summary>
+            /// 给予患者最后一种护理
+            /// </summary>
+            public string last_careunit { get; set; }
+            /// <summary>
+            /// 入住ICU的时间
+            /// </summary>
+            public string intime { get; set; }
+            /// <summary>
+            /// 转出ICU的时间
+            /// </summary>
+            public string outtime { get; set; }
+            /// <summary>
+            /// 入住ICU的时长
+            /// </summary>
+            public string los { get; set; }
             /// <summary>
             /// 保险类型
             /// </summary>

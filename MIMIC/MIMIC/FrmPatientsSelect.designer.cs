@@ -332,6 +332,7 @@
             this.Name = "FrmPatientsSelect";
             this.TabText = "关键字查询病人";
             this.Text = "关键字查询病人";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtstu_no_KeyDown);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);

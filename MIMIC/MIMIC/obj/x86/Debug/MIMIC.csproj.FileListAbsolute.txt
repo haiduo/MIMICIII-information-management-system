@@ -16,3 +16,6 @@ D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.Proper
 D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.csproj.GenerateResource.Cache
 D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.exe
 D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.pdb
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmICUPatientsSearch.resources
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmICUPatientsSelect.resources
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmICUPatientsSelect_Search.resources

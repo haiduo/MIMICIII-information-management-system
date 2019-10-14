@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenu));
             this.lblPatientsSelect = new System.Windows.Forms.Label();
             this.lblPatientsSearch = new System.Windows.Forms.Label();
-            this.lblicuAdd = new System.Windows.Forms.Label();
-            this.lblicusearch = new System.Windows.Forms.Label();
+            this.lblicuSelect = new System.Windows.Forms.Label();
+            this.lblicuSearch = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblPatientsSelect
@@ -58,41 +58,43 @@
             this.lblPatientsSearch.Name = "lblPatientsSearch";
             this.lblPatientsSearch.Size = new System.Drawing.Size(60, 55);
             this.lblPatientsSearch.TabIndex = 1;
-            this.lblPatientsSearch.Text = "病人查询";
+            this.lblPatientsSearch.Text = "病人搜索";
             this.lblPatientsSearch.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.lblPatientsSearch.Click += new System.EventHandler(this.lblPatientsSearch_Click);
             // 
-            // lblicuAdd
+            // lblicuSelect
             // 
-            this.lblicuAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblicuAdd.Image = ((System.Drawing.Image)(resources.GetObject("lblicuAdd.Image")));
-            this.lblicuAdd.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblicuAdd.Location = new System.Drawing.Point(18, 141);
-            this.lblicuAdd.Name = "lblicuAdd";
-            this.lblicuAdd.Size = new System.Drawing.Size(60, 55);
-            this.lblicuAdd.TabIndex = 1;
-            this.lblicuAdd.Text = "ICU";
-            this.lblicuAdd.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lblicuSelect.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblicuSelect.Image = ((System.Drawing.Image)(resources.GetObject("lblicuSelect.Image")));
+            this.lblicuSelect.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblicuSelect.Location = new System.Drawing.Point(18, 141);
+            this.lblicuSelect.Name = "lblicuSelect";
+            this.lblicuSelect.Size = new System.Drawing.Size(60, 55);
+            this.lblicuSelect.TabIndex = 1;
+            this.lblicuSelect.Text = "ICU查询";
+            this.lblicuSelect.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lblicuSelect.Click += new System.EventHandler(this.lblicuSelect_Click);
             // 
-            // lblicusearch
+            // lblicuSearch
             // 
-            this.lblicusearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblicusearch.Image = ((System.Drawing.Image)(resources.GetObject("lblicusearch.Image")));
-            this.lblicusearch.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblicusearch.Location = new System.Drawing.Point(103, 141);
-            this.lblicusearch.Name = "lblicusearch";
-            this.lblicusearch.Size = new System.Drawing.Size(60, 55);
-            this.lblicusearch.TabIndex = 1;
-            this.lblicusearch.Text = "ICU查询";
-            this.lblicusearch.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lblicuSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblicuSearch.Image = ((System.Drawing.Image)(resources.GetObject("lblicuSearch.Image")));
+            this.lblicuSearch.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblicuSearch.Location = new System.Drawing.Point(103, 141);
+            this.lblicuSearch.Name = "lblicuSearch";
+            this.lblicuSearch.Size = new System.Drawing.Size(60, 55);
+            this.lblicuSearch.TabIndex = 1;
+            this.lblicuSearch.Text = "ICU搜索";
+            this.lblicuSearch.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lblicuSearch.Click += new System.EventHandler(this.lblicuSearch_Click);
             // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(244, 546);
-            this.Controls.Add(this.lblicusearch);
-            this.Controls.Add(this.lblicuAdd);
+            this.Controls.Add(this.lblicuSearch);
+            this.Controls.Add(this.lblicuSelect);
             this.Controls.Add(this.lblPatientsSearch);
             this.Controls.Add(this.lblPatientsSelect);
             this.Name = "FrmMenu";
@@ -106,7 +108,7 @@
 
         private System.Windows.Forms.Label lblPatientsSelect;
         private System.Windows.Forms.Label lblPatientsSearch;
-        private System.Windows.Forms.Label lblicuAdd;
-        private System.Windows.Forms.Label lblicusearch;
+        private System.Windows.Forms.Label lblicuSelect;
+        private System.Windows.Forms.Label lblicuSearch;
     }
 }

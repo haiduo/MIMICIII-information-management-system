@@ -306,7 +306,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPatientsSelect_Search";
             this.TabText = "FrmPatientsSelect_Search";
-            this.Text = "查询结果";
+            this.Text = "病人查询结果";
             this.Load += new System.EventHandler(this.FrmPatientsSelect_Search_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGViewPatients)).EndInit();
             this.ResumeLayout(false);
