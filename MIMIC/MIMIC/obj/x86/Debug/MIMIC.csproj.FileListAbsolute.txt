@@ -19,3 +19,6 @@ D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.pdb
 D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmICUPatientsSearch.resources
 D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmICUPatientsSelect.resources
 D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmICUPatientsSelect_Search.resources
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.csprojResolveAssemblyReference.cache
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmCaseSelect.resources
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmCaseSelect_Search.resources

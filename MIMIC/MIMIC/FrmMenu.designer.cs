@@ -33,6 +33,8 @@
             this.lblPatientsSearch = new System.Windows.Forms.Label();
             this.lblicuSelect = new System.Windows.Forms.Label();
             this.lblicuSearch = new System.Windows.Forms.Label();
+            this.lblCaseSelect = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblPatientsSelect
@@ -73,7 +75,7 @@
             this.lblicuSelect.TabIndex = 1;
             this.lblicuSelect.Text = "ICU查询";
             this.lblicuSelect.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.lblicuSelect.Click += new System.EventHandler(this.lblicuSelect_Click);
+            this.lblicuSelect.Click += new System.EventHandler(this.lblCaseSelect_Click);
             // 
             // lblicuSearch
             // 
@@ -88,12 +90,40 @@
             this.lblicuSearch.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.lblicuSearch.Click += new System.EventHandler(this.lblicuSearch_Click);
             // 
+            // lblCaseSelect
+            // 
+            this.lblCaseSelect.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblCaseSelect.Image = ((System.Drawing.Image)(resources.GetObject("lblCaseSelect.Image")));
+            this.lblCaseSelect.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblCaseSelect.Location = new System.Drawing.Point(18, 244);
+            this.lblCaseSelect.Name = "lblCaseSelect";
+            this.lblCaseSelect.Size = new System.Drawing.Size(60, 55);
+            this.lblCaseSelect.TabIndex = 1;
+            this.lblCaseSelect.Text = "病例查询";
+            this.lblCaseSelect.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lblCaseSelect.Click += new System.EventHandler(this.lblCaseSelect_Click);
+            // 
+            // label2
+            // 
+            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label2.Location = new System.Drawing.Point(103, 244);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 55);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "病例搜索";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.label2.Click += new System.EventHandler(this.lblicuSearch_Click);
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(244, 546);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblicuSearch);
+            this.Controls.Add(this.lblCaseSelect);
             this.Controls.Add(this.lblicuSelect);
             this.Controls.Add(this.lblPatientsSearch);
             this.Controls.Add(this.lblPatientsSelect);
@@ -110,5 +140,7 @@
         private System.Windows.Forms.Label lblPatientsSearch;
         private System.Windows.Forms.Label lblicuSelect;
         private System.Windows.Forms.Label lblicuSearch;
+        private System.Windows.Forms.Label lblCaseSelect;
+        private System.Windows.Forms.Label label2;
     }
 }

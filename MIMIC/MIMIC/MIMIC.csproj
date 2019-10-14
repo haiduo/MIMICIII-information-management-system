@@ -71,6 +71,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmCaseSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCaseSelect.Designer.cs">
+      <DependentUpon>FrmCaseSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCaseSelect_Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCaseSelect_Search.Designer.cs">
+      <DependentUpon>FrmCaseSelect_Search.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +161,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmCaseSelect.resx">
+      <DependentUpon>FrmCaseSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCaseSelect_Search.resx">
+      <DependentUpon>FrmCaseSelect_Search.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmHome.resx">
       <DependentUpon>FrmHome.cs</DependentUpon>
     </EmbeddedResource>

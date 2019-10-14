@@ -35,6 +35,10 @@ namespace MIMIC.PatientsService {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchICUPatients", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Data.DataTable SearchICUPatients();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CaseSelect", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable CaseSelect(MIMIC.PatientsService.Patients patients);
     }
     
     /// <remarks/>
@@ -50,6 +54,16 @@ namespace MIMIC.PatientsService {
         private string hadm_idField;
         
         private string icustay_idField;
+        
+        private string itemidField;
+        
+        private string labelField;
+        
+        private string charttimeField;
+        
+        private string valuenumField;
+        
+        private string valueuomField;
         
         private string first_careunitField;
         
@@ -145,6 +159,66 @@ namespace MIMIC.PatientsService {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        public string itemid {
+            get {
+                return this.itemidField;
+            }
+            set {
+                this.itemidField = value;
+                this.RaisePropertyChanged("itemid");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        public string label {
+            get {
+                return this.labelField;
+            }
+            set {
+                this.labelField = value;
+                this.RaisePropertyChanged("label");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        public string charttime {
+            get {
+                return this.charttimeField;
+            }
+            set {
+                this.charttimeField = value;
+                this.RaisePropertyChanged("charttime");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        public string valuenum {
+            get {
+                return this.valuenumField;
+            }
+            set {
+                this.valuenumField = value;
+                this.RaisePropertyChanged("valuenum");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
+        public string valueuom {
+            get {
+                return this.valueuomField;
+            }
+            set {
+                this.valueuomField = value;
+                this.RaisePropertyChanged("valueuom");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
         public string first_careunit {
             get {
                 return this.first_careunitField;
@@ -156,7 +230,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=9)]
         public string last_careunit {
             get {
                 return this.last_careunitField;
@@ -168,7 +242,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=10)]
         public string intime {
             get {
                 return this.intimeField;
@@ -180,7 +254,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=11)]
         public string outtime {
             get {
                 return this.outtimeField;
@@ -192,7 +266,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=12)]
         public string los {
             get {
                 return this.losField;
@@ -204,7 +278,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=13)]
         public string insurance {
             get {
                 return this.insuranceField;
@@ -216,7 +290,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=9)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=14)]
         public string language {
             get {
                 return this.languageField;
@@ -228,7 +302,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=10)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=15)]
         public string gender {
             get {
                 return this.genderField;
@@ -240,7 +314,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=11)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=16)]
         public string age {
             get {
                 return this.ageField;
@@ -252,7 +326,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=12)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=17)]
         public string religion {
             get {
                 return this.religionField;
@@ -264,7 +338,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=13)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=18)]
         public string marital_status {
             get {
                 return this.marital_statusField;
@@ -276,7 +350,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=14)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=19)]
         public string ethnicity {
             get {
                 return this.ethnicityField;
@@ -288,7 +362,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=15)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=20)]
         public string dob {
             get {
                 return this.dobField;
@@ -300,7 +374,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=16)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=21)]
         public string dod {
             get {
                 return this.dodField;
@@ -312,7 +386,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=17)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=22)]
         public string dod_hosp {
             get {
                 return this.dod_hospField;
@@ -324,7 +398,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=18)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=23)]
         public string dod_ssn {
             get {
                 return this.dod_ssnField;
@@ -336,7 +410,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=19)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=24)]
         public string expire_flag {
             get {
                 return this.expire_flagField;
@@ -348,7 +422,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=20)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=25)]
         public string admittime {
             get {
                 return this.admittimeField;
@@ -360,7 +434,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=21)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=26)]
         public string dischtime {
             get {
                 return this.dischtimeField;
@@ -372,7 +446,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=22)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=27)]
         public string deathtime {
             get {
                 return this.deathtimeField;
@@ -384,7 +458,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=23)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=28)]
         public string admission_type {
             get {
                 return this.admission_typeField;
@@ -396,7 +470,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=24)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=29)]
         public string admission_location {
             get {
                 return this.admission_locationField;
@@ -408,7 +482,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=25)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=30)]
         public string discharge_location {
             get {
                 return this.discharge_locationField;
@@ -420,7 +494,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=26)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=31)]
         public string edregtime {
             get {
                 return this.edregtimeField;
@@ -432,7 +506,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=27)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=32)]
         public string edouttime {
             get {
                 return this.edouttimeField;
@@ -444,7 +518,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=28)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=33)]
         public string diagnosis {
             get {
                 return this.diagnosisField;
@@ -456,7 +530,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=29)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=34)]
         public string hospital_expire_flag {
             get {
                 return this.hospital_expire_flagField;
@@ -468,7 +542,7 @@ namespace MIMIC.PatientsService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=30)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=35)]
         public string has_chartevents_data {
             get {
                 return this.has_chartevents_dataField;
@@ -534,6 +608,10 @@ namespace MIMIC.PatientsService {
         
         public System.Data.DataTable SearchICUPatients() {
             return base.Channel.SearchICUPatients();
+        }
+        
+        public System.Data.DataTable CaseSelect(MIMIC.PatientsService.Patients patients) {
+            return base.Channel.CaseSelect(patients);
         }
     }
 }

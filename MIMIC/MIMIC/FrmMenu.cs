@@ -29,10 +29,10 @@ namespace MIMIC
             OpenForm(search);
         }
     
-        private void lblicuSelect_Click(object sender, EventArgs e)
+        private void lblCaseSelect_Click(object sender, EventArgs e)
         {
-            FrmICUPatientsSelect icu_select = new FrmICUPatientsSelect();
-            OpenForm(icu_select);
+            FrmCaseSelect case_select = new FrmCaseSelect();
+            OpenForm(case_select);
         }
 
         private void lblicuSearch_Click(object sender, EventArgs e)

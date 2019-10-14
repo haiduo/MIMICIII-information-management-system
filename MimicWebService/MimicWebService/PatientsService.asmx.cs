@@ -49,7 +49,7 @@ namespace MimicWebService
                     AND cast(hospital_expire_flag as varchar)LIKE '%" + patients.hospital_expire_flag + @"%'
                     AND  diagnosis LIKE '%" + patients.diagnosis + @"%'
                     AND cast(has_chartevents_data as varchar) LIKE '%" + patients.has_chartevents_data + @"%'
-                ORDER BY p.subject_id,a.hadm_id";
+                ORDER BY p.subject_id,a.hadm_id,admittime";
 
             //执行SQL语句
             DataTable dt = new DataTable();
@@ -74,7 +74,7 @@ namespace MimicWebService
                 marital_status,ethnicity,dob,dod,dod_hosp,dod_ssn,expire_flag,admittime,dischtime,deathtime,admission_type,
                 admission_location,discharge_location,edregtime,edouttime,diagnosis,hospital_expire_flag,has_chartevents_data
                                    FROM patients p INNER JOIN admissions a ON p.subject_id = a.subject_id
-                ORDER BY p.subject_id,a.hadm_id";
+                ORDER BY p.subject_id,a.hadm_id,admittime";
             //执行SQL语句
             DataTable dt = new DataTable();
             DataSet ds = new DataSet();
@@ -102,7 +102,7 @@ namespace MimicWebService
                     AND cast(intime as varchar)LIKE '%" + patients.intime + @"%'
                     AND cast(outtime as varchar)LIKE '%" + patients.outtime + @"%'
                     AND cast(los as varchar)LIKE '%" + patients.intime + @"%'
-                ORDER BY p.subject_id,a.hadm_id,i.icustay_id";
+                ORDER BY p.subject_id,a.hadm_id,i.icustay_id,intime";
 
             //执行SQL语句
             DataTable dt = new DataTable();
@@ -122,7 +122,7 @@ namespace MimicWebService
                 gender,first_careunit,last_careunit,intime,outtime,los
                                    FROM icustays i INNER JOIN admissions a ON i.hadm_id = a.hadm_id
                                                    INNER JOIN patients p ON i.subject_id =p.subject_id
-                ORDER BY p.subject_id,a.hadm_id,i.icustay_id";
+                ORDER BY p.subject_id,a.hadm_id,i.icustay_id,intime";
             //执行SQL语句
             DataTable dt = new DataTable();
             DataSet ds = new DataSet();
@@ -131,6 +131,38 @@ namespace MimicWebService
             dt = ds.Tables["patients"];//获取数据源中的表
             return dt;
         }
+
+        [WebMethod]
+        public DataTable CaseSelect(Patients patients)
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"set search_path to mimiciii;
+              SELECT p.subject_id,a.hadm_id,i.icustay_id ,d.itemid,label,gender,charttime,valuenum,valueuom
+              FROM chartevents c INNER JOIN admissions a ON c.hadm_id = a.hadm_id
+                                 INNER JOIN patients p ON c.subject_id =p.subject_id
+                                 INNER JOIN icustays i ON c.icustay_id =i.icustay_id
+                                 INNER JOIN d_items d ON c.itemid =d.itemid
+                WHERE cast(p.subject_id as varchar) LIKE '%" + patients.subject_id + @"%'
+                     AND cast(a.hadm_id as varchar) LIKE '%" + patients.hadm_id + @"%'
+                     AND cast(i.icustay_id as varchar) LIKE '%" + patients.icustay_id + @"%'
+                     AND cast(d.itemid as varchar) LIKE '%" + patients.itemid + @"%'
+                     AND label  LIKE '%" + patients.label + @"%'
+                     AND LOWER(gender)LIKE '%" + patients.gender + @"%'
+                     AND cast(charttime as varchar) LIKE '%" + patients.charttime + @"%'
+                     AND cast(valuenum as varchar)  LIKE '%" + patients.valuenum + @"%'
+                     AND valueuom  LIKE '%" + patients.valueuom + @"%'
+                ORDER BY p.subject_id,a.hadm_id,i.icustay_id,d.itemid,charttime";
+
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
 
         //Model对象
         //对应是表
@@ -149,6 +181,26 @@ namespace MimicWebService
             /// 入ICU记录标识
             /// </summary>
             public string icustay_id { get; set; }
+            /// <summary>
+            /// 测量类型标识
+            /// </summary>
+            public string itemid { get; set; }
+            /// <summary>
+            /// 测量类型标识所表示的值
+            /// </summary>
+            public string label { get; set; }
+            /// <summary>
+            /// 观测进行的时间
+            /// </summary>
+            public string charttime { get; set; }
+            /// <summary>
+            /// 项目测量的值或描述
+            /// </summary>
+            public string valuenum { get; set; }
+            /// <summary>
+            /// 测量值的单位
+            /// </summary>
+            public string valueuom { get; set; }
             /// <summary>
             /// 给予患者的第一种护理
             /// </summary>
