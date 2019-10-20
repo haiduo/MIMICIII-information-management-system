@@ -23,22 +23,34 @@ namespace MIMIC
             OpenForm(select);
         }
 
-        private void lblPatientsSearch_Click(object sender, EventArgs e)
+        private void lblICUSelect_Click(object sender, EventArgs e)
         {
-            FrmPatientsSearch search = new FrmPatientsSearch();//实例化子窗体
-            OpenForm(search);
+            FrmICUPatientsSelect icu_select = new FrmICUPatientsSelect();
+            OpenForm(icu_select);
         }
-    
+
         private void lblCaseSelect_Click(object sender, EventArgs e)
         {
             FrmCaseSelect case_select = new FrmCaseSelect();
             OpenForm(case_select);
         }
 
-        private void lblicuSearch_Click(object sender, EventArgs e)
+        private void lblPatientsSearch_Click(object sender, EventArgs e)
         {
-            FrmICUPatientsSearch icu_search = new FrmICUPatientsSearch();
-            OpenForm(icu_search);
+            FrmPatientsSearch search = new FrmPatientsSearch();//实例化子窗体
+            OpenForm(search);
+        }
+
+        private void lblPatientsSearch1_Click(object sender, EventArgs e)
+        {
+            FrmPatientsSearch1 search1 = new FrmPatientsSearch1();
+            OpenForm(search1);
+        }
+
+        private void lblPatientsSearch2_Click(object sender, EventArgs e)
+        {
+            FrmPatientsSearch2 search2 = new FrmPatientsSearch2();
+            OpenForm(search2);
         }
 
         private void OpenForm(DockContent frm)

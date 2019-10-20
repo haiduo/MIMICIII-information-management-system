@@ -4,7 +4,11 @@ D:\MIMICIII-information-management-system\MIMIC\MIMIC\bin\Debug\MIMIC.pdb
 D:\MIMICIII-information-management-system\MIMIC\MIMIC\bin\Debug\Mono.Security.dll
 D:\MIMICIII-information-management-system\MIMIC\MIMIC\bin\Debug\Npgsql.dll
 D:\MIMICIII-information-management-system\MIMIC\MIMIC\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmCaseSelect.resources
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmCaseSelect_Search.resources
 D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmHome.resources
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmICUPatientsSelect.resources
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmICUPatientsSelect_Search.resources
 D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmLogin.resources
 D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmMain.resources
 D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmMenu.resources
@@ -16,9 +20,5 @@ D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.Proper
 D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.csproj.GenerateResource.Cache
 D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.exe
 D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.pdb
-D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmICUPatientsSearch.resources
-D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmICUPatientsSelect.resources
-D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmICUPatientsSelect_Search.resources
-D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.csprojResolveAssemblyReference.cache
-D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmCaseSelect.resources
-D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmCaseSelect_Search.resources
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmPatientsSearch1.resources
+D:\MIMICIII-information-management-system\MIMIC\MIMIC\obj\x86\Debug\MIMIC.FrmPatientsSearch2.resources

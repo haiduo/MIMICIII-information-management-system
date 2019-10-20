@@ -57,29 +57,152 @@
           <s:element minOccurs="0" maxOccurs="1" name="diagnosis" type="s:string" />
           <s:element minOccurs="0" maxOccurs="1" name="hospital_expire_flag" type="s:string" />
           <s:element minOccurs="0" maxOccurs="1" name="has_chartevents_data" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dbsource" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="first_wardid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="last_wardid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="storetime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cgid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="value" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="warning" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="resultstatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="stopped" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="abbreviation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="linksto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="category" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="unitname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="param_type" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="conceptid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="submit_wardid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="submit_careunit" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="curr_wardid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="curr_careunit" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="callout_wardid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="callout_service" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="request_tele" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="request_resp" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="request_cdiff" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="request_mrsa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="request_vre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="callout_outcome" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="discharge_wardid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="acknowledge_status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="createtime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="updatetime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="acknowledgetime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="outcometime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="firstreservationtime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="currentreservationtime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="transfertime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="prev_service" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="curr_service" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="eventtype" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="prev_careunit" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="prev_wardid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="care_label" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="amount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="amountuom" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="rate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="orderid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="linkorderid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="inp_stopped" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="newbottle" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ordercategoryname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="secondaryordercategoryname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ordercomponenttypedescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ordercategorydescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="patientweight" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="totalamount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="totalamountuom" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="isopenbag" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="continueinnextdept" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cancelreason" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="statusdescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="comments_editedby" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="comments_canceledby" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="comments_date" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="originalamount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="originalrate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="n_chartdate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="n_category" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="n_description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="iserror" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="text" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="o_charttime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="o_value" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="o_valueuom" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="o_storetime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dcpt_category" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sectionrange" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dcpt_sectionheader" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="subsectionrange" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dcp_subsectionheader" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="codesuffix" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mincodeinsubsection" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="maxcodeinsubsection" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="seq_num" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="icd9_code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="costcenter" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cpt_cd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cpt_number" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cpt_suffix" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ticket_id_seq" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sectionheader" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="subsectionheader" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cp_description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="drg_type" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="drg_code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dr_description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="drg_severity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="drg_mortality" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="l_charttime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="l_value" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="l_valuenum" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="l_valueuom" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="l_flag" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_chartdate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_charttime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="spec_itemid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="spec_type_desc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="org_itemid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="org_name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="isolate_num" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ab_itemid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ab_name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dilution_text" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dilution_comparison" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dilution_value" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="interpretation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="startdate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="enddate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="drug_type" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="drug" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="drug_name_poe" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="drug_name_generic" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="formulary_drug_cd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="gsn" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ndc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="prod_strength" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dose_val_rx" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dose_unit_rx" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="form_val_disp" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="form_unit_disp" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="route" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="short_title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="long_title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="d_p_short_title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="d_p_long_title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="d_l_label" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="fluid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="d_l_category" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="loinc_code" type="s:string" />
         </s:sequence>
       </s:complexType>
       <s:element name="SelectPatientsResponse">
         <s:complexType>
           <s:sequence>
             <s:element minOccurs="0" maxOccurs="1" name="SelectPatientsResult">
-              <s:complexType>
-                <s:sequence>
-                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
-                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="SearchPatients">
-        <s:complexType />
-      </s:element>
-      <s:element name="SearchPatientsResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SearchPatientsResult">
               <s:complexType>
                 <s:sequence>
                   <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
@@ -111,23 +234,6 @@
           </s:sequence>
         </s:complexType>
       </s:element>
-      <s:element name="SearchICUPatients">
-        <s:complexType />
-      </s:element>
-      <s:element name="SearchICUPatientsResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SearchICUPatientsResult">
-              <s:complexType>
-                <s:sequence>
-                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
-                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
       <s:element name="CaseSelect">
         <s:complexType>
           <s:sequence>
@@ -139,6 +245,57 @@
         <s:complexType>
           <s:sequence>
             <s:element minOccurs="0" maxOccurs="1" name="CaseSelectResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchPatients">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchPatientsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchPatientsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchPatients1">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchPatients1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchPatients1Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchPatients2">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchPatients2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchPatients2Result">
               <s:complexType>
                 <s:sequence>
                   <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
@@ -163,29 +320,35 @@
   <wsdl:message name="SelectPatientsSoapOut">
     <wsdl:part name="parameters" element="tns:SelectPatientsResponse" />
   </wsdl:message>
-  <wsdl:message name="SearchPatientsSoapIn">
-    <wsdl:part name="parameters" element="tns:SearchPatients" />
-  </wsdl:message>
-  <wsdl:message name="SearchPatientsSoapOut">
-    <wsdl:part name="parameters" element="tns:SearchPatientsResponse" />
-  </wsdl:message>
   <wsdl:message name="ICUSelectPatientsSoapIn">
     <wsdl:part name="parameters" element="tns:ICUSelectPatients" />
   </wsdl:message>
   <wsdl:message name="ICUSelectPatientsSoapOut">
     <wsdl:part name="parameters" element="tns:ICUSelectPatientsResponse" />
   </wsdl:message>
-  <wsdl:message name="SearchICUPatientsSoapIn">
-    <wsdl:part name="parameters" element="tns:SearchICUPatients" />
-  </wsdl:message>
-  <wsdl:message name="SearchICUPatientsSoapOut">
-    <wsdl:part name="parameters" element="tns:SearchICUPatientsResponse" />
-  </wsdl:message>
   <wsdl:message name="CaseSelectSoapIn">
     <wsdl:part name="parameters" element="tns:CaseSelect" />
   </wsdl:message>
   <wsdl:message name="CaseSelectSoapOut">
     <wsdl:part name="parameters" element="tns:CaseSelectResponse" />
+  </wsdl:message>
+  <wsdl:message name="SearchPatientsSoapIn">
+    <wsdl:part name="parameters" element="tns:SearchPatients" />
+  </wsdl:message>
+  <wsdl:message name="SearchPatientsSoapOut">
+    <wsdl:part name="parameters" element="tns:SearchPatientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SearchPatients1SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchPatients1" />
+  </wsdl:message>
+  <wsdl:message name="SearchPatients1SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchPatients1Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchPatients2SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchPatients2" />
+  </wsdl:message>
+  <wsdl:message name="SearchPatients2SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchPatients2Response" />
   </wsdl:message>
   <wsdl:portType name="PatientsServiceSoap">
     <wsdl:operation name="HelloWorld">
@@ -196,21 +359,25 @@
       <wsdl:input message="tns:SelectPatientsSoapIn" />
       <wsdl:output message="tns:SelectPatientsSoapOut" />
     </wsdl:operation>
-    <wsdl:operation name="SearchPatients">
-      <wsdl:input message="tns:SearchPatientsSoapIn" />
-      <wsdl:output message="tns:SearchPatientsSoapOut" />
-    </wsdl:operation>
     <wsdl:operation name="ICUSelectPatients">
       <wsdl:input message="tns:ICUSelectPatientsSoapIn" />
       <wsdl:output message="tns:ICUSelectPatientsSoapOut" />
     </wsdl:operation>
-    <wsdl:operation name="SearchICUPatients">
-      <wsdl:input message="tns:SearchICUPatientsSoapIn" />
-      <wsdl:output message="tns:SearchICUPatientsSoapOut" />
-    </wsdl:operation>
     <wsdl:operation name="CaseSelect">
       <wsdl:input message="tns:CaseSelectSoapIn" />
       <wsdl:output message="tns:CaseSelectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchPatients">
+      <wsdl:input message="tns:SearchPatientsSoapIn" />
+      <wsdl:output message="tns:SearchPatientsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchPatients1">
+      <wsdl:input message="tns:SearchPatients1SoapIn" />
+      <wsdl:output message="tns:SearchPatients1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchPatients2">
+      <wsdl:input message="tns:SearchPatients2SoapIn" />
+      <wsdl:output message="tns:SearchPatients2SoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="PatientsServiceSoap" type="tns:PatientsServiceSoap">
@@ -233,15 +400,6 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="SearchPatients">
-      <soap:operation soapAction="http://tempuri.org/SearchPatients" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="ICUSelectPatients">
       <soap:operation soapAction="http://tempuri.org/ICUSelectPatients" style="document" />
       <wsdl:input>
@@ -251,8 +409,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="SearchICUPatients">
-      <soap:operation soapAction="http://tempuri.org/SearchICUPatients" style="document" />
+    <wsdl:operation name="CaseSelect">
+      <soap:operation soapAction="http://tempuri.org/CaseSelect" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -260,8 +418,26 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="CaseSelect">
-      <soap:operation soapAction="http://tempuri.org/CaseSelect" style="document" />
+    <wsdl:operation name="SearchPatients">
+      <soap:operation soapAction="http://tempuri.org/SearchPatients" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchPatients1">
+      <soap:operation soapAction="http://tempuri.org/SearchPatients1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchPatients2">
+      <soap:operation soapAction="http://tempuri.org/SearchPatients2" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -290,15 +466,6 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="SearchPatients">
-      <soap12:operation soapAction="http://tempuri.org/SearchPatients" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="ICUSelectPatients">
       <soap12:operation soapAction="http://tempuri.org/ICUSelectPatients" style="document" />
       <wsdl:input>
@@ -308,8 +475,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="SearchICUPatients">
-      <soap12:operation soapAction="http://tempuri.org/SearchICUPatients" style="document" />
+    <wsdl:operation name="CaseSelect">
+      <soap12:operation soapAction="http://tempuri.org/CaseSelect" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -317,8 +484,26 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="CaseSelect">
-      <soap12:operation soapAction="http://tempuri.org/CaseSelect" style="document" />
+    <wsdl:operation name="SearchPatients">
+      <soap12:operation soapAction="http://tempuri.org/SearchPatients" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchPatients1">
+      <soap12:operation soapAction="http://tempuri.org/SearchPatients1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchPatients2">
+      <soap12:operation soapAction="http://tempuri.org/SearchPatients2" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

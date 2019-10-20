@@ -19,7 +19,7 @@ namespace MIMIC
         }
 
         /// <summary>
-        /// 学号控件的键盘事件,用户查询学生信息
+        /// 病人控件的键盘事件,用户查询病人信息
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

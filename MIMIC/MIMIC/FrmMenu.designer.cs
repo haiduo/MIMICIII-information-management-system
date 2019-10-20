@@ -47,7 +47,7 @@
             this.lblPatientsSelect.Name = "lblPatientsSelect";
             this.lblPatientsSelect.Size = new System.Drawing.Size(60, 55);
             this.lblPatientsSelect.TabIndex = 0;
-            this.lblPatientsSelect.Text = "精确查询";
+            this.lblPatientsSelect.Text = "基本查询";
             this.lblPatientsSelect.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.lblPatientsSelect.Click += new System.EventHandler(this.lblPatientsSelect_Click);
             // 
@@ -60,7 +60,7 @@
             this.lblPatientsSearch.Name = "lblPatientsSearch";
             this.lblPatientsSearch.Size = new System.Drawing.Size(60, 55);
             this.lblPatientsSearch.TabIndex = 1;
-            this.lblPatientsSearch.Text = "病人搜索";
+            this.lblPatientsSearch.Text = "数据库1";
             this.lblPatientsSearch.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.lblPatientsSearch.Click += new System.EventHandler(this.lblPatientsSearch_Click);
             // 
@@ -75,7 +75,7 @@
             this.lblicuSelect.TabIndex = 1;
             this.lblicuSelect.Text = "ICU查询";
             this.lblicuSelect.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.lblicuSelect.Click += new System.EventHandler(this.lblCaseSelect_Click);
+            this.lblicuSelect.Click += new System.EventHandler(this.lblICUSelect_Click);
             // 
             // lblicuSearch
             // 
@@ -86,9 +86,9 @@
             this.lblicuSearch.Name = "lblicuSearch";
             this.lblicuSearch.Size = new System.Drawing.Size(60, 55);
             this.lblicuSearch.TabIndex = 1;
-            this.lblicuSearch.Text = "ICU搜索";
+            this.lblicuSearch.Text = "数据库2";
             this.lblicuSearch.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.lblicuSearch.Click += new System.EventHandler(this.lblicuSearch_Click);
+            this.lblicuSearch.Click += new System.EventHandler(this.lblPatientsSearch1_Click);
             // 
             // lblCaseSelect
             // 
@@ -112,9 +112,9 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 55);
             this.label2.TabIndex = 1;
-            this.label2.Text = "病例搜索";
+            this.label2.Text = "数据库3";
             this.label2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label2.Click += new System.EventHandler(this.lblicuSearch_Click);
+            this.label2.Click += new System.EventHandler(this.lblPatientsSearch2_Click);
             // 
             // FrmMenu
             // 

@@ -89,11 +89,11 @@
     <Compile Include="FrmHome.designer.cs">
       <DependentUpon>FrmHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmICUPatientsSearch.cs">
+    <Compile Include="FrmPatientsSearch1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmICUPatientsSearch.Designer.cs">
-      <DependentUpon>FrmICUPatientsSearch.cs</DependentUpon>
+    <Compile Include="FrmPatientsSearch1.Designer.cs">
+      <DependentUpon>FrmPatientsSearch1.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmICUPatientsSelect.cs">
       <SubType>Form</SubType>
@@ -161,6 +161,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="FrmPatientsSearch2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPatientsSearch2.Designer.cs">
+      <DependentUpon>FrmPatientsSearch2.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmCaseSelect.resx">
       <DependentUpon>FrmCaseSelect.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,8 +176,8 @@
     <EmbeddedResource Include="FrmHome.resx">
       <DependentUpon>FrmHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmICUPatientsSearch.resx">
-      <DependentUpon>FrmICUPatientsSearch.cs</DependentUpon>
+    <EmbeddedResource Include="FrmPatientsSearch1.resx">
+      <DependentUpon>FrmPatientsSearch1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmICUPatientsSelect.resx">
       <DependentUpon>FrmICUPatientsSelect.cs</DependentUpon>
@@ -209,6 +215,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmPatientsSearch2.resx">
+      <DependentUpon>FrmPatientsSearch2.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>

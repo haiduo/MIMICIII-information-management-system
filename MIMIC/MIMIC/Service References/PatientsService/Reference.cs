@@ -24,21 +24,25 @@ namespace MIMIC.PatientsService {
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Data.DataTable SelectPatients(MIMIC.PatientsService.Patients patients);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchPatients", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Data.DataTable SearchPatients();
-        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICUSelectPatients", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Data.DataTable ICUSelectPatients(MIMIC.PatientsService.Patients patients);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchICUPatients", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Data.DataTable SearchICUPatients();
-        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CaseSelect", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Data.DataTable CaseSelect(MIMIC.PatientsService.Patients patients);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchPatients", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchPatients();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchPatients1", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchPatients1();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchPatients2", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchPatients2();
     }
     
     /// <remarks/>
@@ -120,6 +124,286 @@ namespace MIMIC.PatientsService {
         private string hospital_expire_flagField;
         
         private string has_chartevents_dataField;
+        
+        private string dbsourceField;
+        
+        private string first_wardidField;
+        
+        private string last_wardidField;
+        
+        private string storetimeField;
+        
+        private string cgidField;
+        
+        private string valueField;
+        
+        private string warningField;
+        
+        private string errorField;
+        
+        private string resultstatusField;
+        
+        private string stoppedField;
+        
+        private string abbreviationField;
+        
+        private string linkstoField;
+        
+        private string categoryField;
+        
+        private string unitnameField;
+        
+        private string param_typeField;
+        
+        private string conceptidField;
+        
+        private string submit_wardidField;
+        
+        private string submit_careunitField;
+        
+        private string curr_wardidField;
+        
+        private string curr_careunitField;
+        
+        private string callout_wardidField;
+        
+        private string callout_serviceField;
+        
+        private string request_teleField;
+        
+        private string request_respField;
+        
+        private string request_cdiffField;
+        
+        private string request_mrsaField;
+        
+        private string request_vreField;
+        
+        private string callout_outcomeField;
+        
+        private string discharge_wardidField;
+        
+        private string acknowledge_statusField;
+        
+        private string createtimeField;
+        
+        private string updatetimeField;
+        
+        private string acknowledgetimeField;
+        
+        private string outcometimeField;
+        
+        private string firstreservationtimeField;
+        
+        private string currentreservationtimeField;
+        
+        private string transfertimeField;
+        
+        private string prev_serviceField;
+        
+        private string curr_serviceField;
+        
+        private string eventtypeField;
+        
+        private string prev_careunitField;
+        
+        private string prev_wardidField;
+        
+        private string care_labelField;
+        
+        private string descriptionField;
+        
+        private string amountField;
+        
+        private string amountuomField;
+        
+        private string rateField;
+        
+        private string orderidField;
+        
+        private string linkorderidField;
+        
+        private string inp_stoppedField;
+        
+        private string newbottleField;
+        
+        private string ordercategorynameField;
+        
+        private string secondaryordercategorynameField;
+        
+        private string ordercomponenttypedescriptionField;
+        
+        private string ordercategorydescriptionField;
+        
+        private string patientweightField;
+        
+        private string totalamountField;
+        
+        private string totalamountuomField;
+        
+        private string isopenbagField;
+        
+        private string continueinnextdeptField;
+        
+        private string cancelreasonField;
+        
+        private string statusdescriptionField;
+        
+        private string comments_editedbyField;
+        
+        private string comments_canceledbyField;
+        
+        private string comments_dateField;
+        
+        private string originalamountField;
+        
+        private string originalrateField;
+        
+        private string n_chartdateField;
+        
+        private string n_categoryField;
+        
+        private string n_descriptionField;
+        
+        private string iserrorField;
+        
+        private string textField;
+        
+        private string o_charttimeField;
+        
+        private string o_valueField;
+        
+        private string o_valueuomField;
+        
+        private string o_storetimeField;
+        
+        private string dcpt_categoryField;
+        
+        private string sectionrangeField;
+        
+        private string dcpt_sectionheaderField;
+        
+        private string subsectionrangeField;
+        
+        private string dcp_subsectionheaderField;
+        
+        private string codesuffixField;
+        
+        private string mincodeinsubsectionField;
+        
+        private string maxcodeinsubsectionField;
+        
+        private string seq_numField;
+        
+        private string icd9_codeField;
+        
+        private string costcenterField;
+        
+        private string cpt_cdField;
+        
+        private string cpt_numberField;
+        
+        private string cpt_suffixField;
+        
+        private string ticket_id_seqField;
+        
+        private string sectionheaderField;
+        
+        private string subsectionheaderField;
+        
+        private string cp_descriptionField;
+        
+        private string drg_typeField;
+        
+        private string drg_codeField;
+        
+        private string dr_descriptionField;
+        
+        private string drg_severityField;
+        
+        private string drg_mortalityField;
+        
+        private string l_charttimeField;
+        
+        private string l_valueField;
+        
+        private string l_valuenumField;
+        
+        private string l_valueuomField;
+        
+        private string l_flagField;
+        
+        private string m_chartdateField;
+        
+        private string m_charttimeField;
+        
+        private string spec_itemidField;
+        
+        private string spec_type_descField;
+        
+        private string org_itemidField;
+        
+        private string org_nameField;
+        
+        private string isolate_numField;
+        
+        private string ab_itemidField;
+        
+        private string ab_nameField;
+        
+        private string dilution_textField;
+        
+        private string dilution_comparisonField;
+        
+        private string dilution_valueField;
+        
+        private string interpretationField;
+        
+        private string startdateField;
+        
+        private string enddateField;
+        
+        private string drug_typeField;
+        
+        private string drugField;
+        
+        private string drug_name_poeField;
+        
+        private string drug_name_genericField;
+        
+        private string formulary_drug_cdField;
+        
+        private string gsnField;
+        
+        private string ndcField;
+        
+        private string prod_strengthField;
+        
+        private string dose_val_rxField;
+        
+        private string dose_unit_rxField;
+        
+        private string form_val_dispField;
+        
+        private string form_unit_dispField;
+        
+        private string routeField;
+        
+        private string short_titleField;
+        
+        private string long_titleField;
+        
+        private string d_p_short_titleField;
+        
+        private string d_p_long_titleField;
+        
+        private string d_l_labelField;
+        
+        private string fluidField;
+        
+        private string d_l_categoryField;
+        
+        private string loinc_codeField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Order=0)]
@@ -553,6 +837,1686 @@ namespace MIMIC.PatientsService {
             }
         }
         
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=36)]
+        public string dbsource {
+            get {
+                return this.dbsourceField;
+            }
+            set {
+                this.dbsourceField = value;
+                this.RaisePropertyChanged("dbsource");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=37)]
+        public string first_wardid {
+            get {
+                return this.first_wardidField;
+            }
+            set {
+                this.first_wardidField = value;
+                this.RaisePropertyChanged("first_wardid");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=38)]
+        public string last_wardid {
+            get {
+                return this.last_wardidField;
+            }
+            set {
+                this.last_wardidField = value;
+                this.RaisePropertyChanged("last_wardid");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=39)]
+        public string storetime {
+            get {
+                return this.storetimeField;
+            }
+            set {
+                this.storetimeField = value;
+                this.RaisePropertyChanged("storetime");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=40)]
+        public string cgid {
+            get {
+                return this.cgidField;
+            }
+            set {
+                this.cgidField = value;
+                this.RaisePropertyChanged("cgid");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=41)]
+        public string value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+                this.RaisePropertyChanged("value");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=42)]
+        public string warning {
+            get {
+                return this.warningField;
+            }
+            set {
+                this.warningField = value;
+                this.RaisePropertyChanged("warning");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=43)]
+        public string error {
+            get {
+                return this.errorField;
+            }
+            set {
+                this.errorField = value;
+                this.RaisePropertyChanged("error");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=44)]
+        public string resultstatus {
+            get {
+                return this.resultstatusField;
+            }
+            set {
+                this.resultstatusField = value;
+                this.RaisePropertyChanged("resultstatus");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=45)]
+        public string stopped {
+            get {
+                return this.stoppedField;
+            }
+            set {
+                this.stoppedField = value;
+                this.RaisePropertyChanged("stopped");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=46)]
+        public string abbreviation {
+            get {
+                return this.abbreviationField;
+            }
+            set {
+                this.abbreviationField = value;
+                this.RaisePropertyChanged("abbreviation");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=47)]
+        public string linksto {
+            get {
+                return this.linkstoField;
+            }
+            set {
+                this.linkstoField = value;
+                this.RaisePropertyChanged("linksto");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=48)]
+        public string category {
+            get {
+                return this.categoryField;
+            }
+            set {
+                this.categoryField = value;
+                this.RaisePropertyChanged("category");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=49)]
+        public string unitname {
+            get {
+                return this.unitnameField;
+            }
+            set {
+                this.unitnameField = value;
+                this.RaisePropertyChanged("unitname");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=50)]
+        public string param_type {
+            get {
+                return this.param_typeField;
+            }
+            set {
+                this.param_typeField = value;
+                this.RaisePropertyChanged("param_type");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=51)]
+        public string conceptid {
+            get {
+                return this.conceptidField;
+            }
+            set {
+                this.conceptidField = value;
+                this.RaisePropertyChanged("conceptid");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=52)]
+        public string submit_wardid {
+            get {
+                return this.submit_wardidField;
+            }
+            set {
+                this.submit_wardidField = value;
+                this.RaisePropertyChanged("submit_wardid");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=53)]
+        public string submit_careunit {
+            get {
+                return this.submit_careunitField;
+            }
+            set {
+                this.submit_careunitField = value;
+                this.RaisePropertyChanged("submit_careunit");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=54)]
+        public string curr_wardid {
+            get {
+                return this.curr_wardidField;
+            }
+            set {
+                this.curr_wardidField = value;
+                this.RaisePropertyChanged("curr_wardid");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=55)]
+        public string curr_careunit {
+            get {
+                return this.curr_careunitField;
+            }
+            set {
+                this.curr_careunitField = value;
+                this.RaisePropertyChanged("curr_careunit");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=56)]
+        public string callout_wardid {
+            get {
+                return this.callout_wardidField;
+            }
+            set {
+                this.callout_wardidField = value;
+                this.RaisePropertyChanged("callout_wardid");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=57)]
+        public string callout_service {
+            get {
+                return this.callout_serviceField;
+            }
+            set {
+                this.callout_serviceField = value;
+                this.RaisePropertyChanged("callout_service");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=58)]
+        public string request_tele {
+            get {
+                return this.request_teleField;
+            }
+            set {
+                this.request_teleField = value;
+                this.RaisePropertyChanged("request_tele");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=59)]
+        public string request_resp {
+            get {
+                return this.request_respField;
+            }
+            set {
+                this.request_respField = value;
+                this.RaisePropertyChanged("request_resp");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=60)]
+        public string request_cdiff {
+            get {
+                return this.request_cdiffField;
+            }
+            set {
+                this.request_cdiffField = value;
+                this.RaisePropertyChanged("request_cdiff");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=61)]
+        public string request_mrsa {
+            get {
+                return this.request_mrsaField;
+            }
+            set {
+                this.request_mrsaField = value;
+                this.RaisePropertyChanged("request_mrsa");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=62)]
+        public string request_vre {
+            get {
+                return this.request_vreField;
+            }
+            set {
+                this.request_vreField = value;
+                this.RaisePropertyChanged("request_vre");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=63)]
+        public string callout_outcome {
+            get {
+                return this.callout_outcomeField;
+            }
+            set {
+                this.callout_outcomeField = value;
+                this.RaisePropertyChanged("callout_outcome");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=64)]
+        public string discharge_wardid {
+            get {
+                return this.discharge_wardidField;
+            }
+            set {
+                this.discharge_wardidField = value;
+                this.RaisePropertyChanged("discharge_wardid");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=65)]
+        public string acknowledge_status {
+            get {
+                return this.acknowledge_statusField;
+            }
+            set {
+                this.acknowledge_statusField = value;
+                this.RaisePropertyChanged("acknowledge_status");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=66)]
+        public string createtime {
+            get {
+                return this.createtimeField;
+            }
+            set {
+                this.createtimeField = value;
+                this.RaisePropertyChanged("createtime");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=67)]
+        public string updatetime {
+            get {
+                return this.updatetimeField;
+            }
+            set {
+                this.updatetimeField = value;
+                this.RaisePropertyChanged("updatetime");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=68)]
+        public string acknowledgetime {
+            get {
+                return this.acknowledgetimeField;
+            }
+            set {
+                this.acknowledgetimeField = value;
+                this.RaisePropertyChanged("acknowledgetime");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=69)]
+        public string outcometime {
+            get {
+                return this.outcometimeField;
+            }
+            set {
+                this.outcometimeField = value;
+                this.RaisePropertyChanged("outcometime");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=70)]
+        public string firstreservationtime {
+            get {
+                return this.firstreservationtimeField;
+            }
+            set {
+                this.firstreservationtimeField = value;
+                this.RaisePropertyChanged("firstreservationtime");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=71)]
+        public string currentreservationtime {
+            get {
+                return this.currentreservationtimeField;
+            }
+            set {
+                this.currentreservationtimeField = value;
+                this.RaisePropertyChanged("currentreservationtime");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=72)]
+        public string transfertime {
+            get {
+                return this.transfertimeField;
+            }
+            set {
+                this.transfertimeField = value;
+                this.RaisePropertyChanged("transfertime");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=73)]
+        public string prev_service {
+            get {
+                return this.prev_serviceField;
+            }
+            set {
+                this.prev_serviceField = value;
+                this.RaisePropertyChanged("prev_service");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=74)]
+        public string curr_service {
+            get {
+                return this.curr_serviceField;
+            }
+            set {
+                this.curr_serviceField = value;
+                this.RaisePropertyChanged("curr_service");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=75)]
+        public string eventtype {
+            get {
+                return this.eventtypeField;
+            }
+            set {
+                this.eventtypeField = value;
+                this.RaisePropertyChanged("eventtype");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=76)]
+        public string prev_careunit {
+            get {
+                return this.prev_careunitField;
+            }
+            set {
+                this.prev_careunitField = value;
+                this.RaisePropertyChanged("prev_careunit");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=77)]
+        public string prev_wardid {
+            get {
+                return this.prev_wardidField;
+            }
+            set {
+                this.prev_wardidField = value;
+                this.RaisePropertyChanged("prev_wardid");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=78)]
+        public string care_label {
+            get {
+                return this.care_labelField;
+            }
+            set {
+                this.care_labelField = value;
+                this.RaisePropertyChanged("care_label");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=79)]
+        public string description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+                this.RaisePropertyChanged("description");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=80)]
+        public string amount {
+            get {
+                return this.amountField;
+            }
+            set {
+                this.amountField = value;
+                this.RaisePropertyChanged("amount");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=81)]
+        public string amountuom {
+            get {
+                return this.amountuomField;
+            }
+            set {
+                this.amountuomField = value;
+                this.RaisePropertyChanged("amountuom");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=82)]
+        public string rate {
+            get {
+                return this.rateField;
+            }
+            set {
+                this.rateField = value;
+                this.RaisePropertyChanged("rate");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=83)]
+        public string orderid {
+            get {
+                return this.orderidField;
+            }
+            set {
+                this.orderidField = value;
+                this.RaisePropertyChanged("orderid");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=84)]
+        public string linkorderid {
+            get {
+                return this.linkorderidField;
+            }
+            set {
+                this.linkorderidField = value;
+                this.RaisePropertyChanged("linkorderid");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=85)]
+        public string inp_stopped {
+            get {
+                return this.inp_stoppedField;
+            }
+            set {
+                this.inp_stoppedField = value;
+                this.RaisePropertyChanged("inp_stopped");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=86)]
+        public string newbottle {
+            get {
+                return this.newbottleField;
+            }
+            set {
+                this.newbottleField = value;
+                this.RaisePropertyChanged("newbottle");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=87)]
+        public string ordercategoryname {
+            get {
+                return this.ordercategorynameField;
+            }
+            set {
+                this.ordercategorynameField = value;
+                this.RaisePropertyChanged("ordercategoryname");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=88)]
+        public string secondaryordercategoryname {
+            get {
+                return this.secondaryordercategorynameField;
+            }
+            set {
+                this.secondaryordercategorynameField = value;
+                this.RaisePropertyChanged("secondaryordercategoryname");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=89)]
+        public string ordercomponenttypedescription {
+            get {
+                return this.ordercomponenttypedescriptionField;
+            }
+            set {
+                this.ordercomponenttypedescriptionField = value;
+                this.RaisePropertyChanged("ordercomponenttypedescription");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=90)]
+        public string ordercategorydescription {
+            get {
+                return this.ordercategorydescriptionField;
+            }
+            set {
+                this.ordercategorydescriptionField = value;
+                this.RaisePropertyChanged("ordercategorydescription");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=91)]
+        public string patientweight {
+            get {
+                return this.patientweightField;
+            }
+            set {
+                this.patientweightField = value;
+                this.RaisePropertyChanged("patientweight");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=92)]
+        public string totalamount {
+            get {
+                return this.totalamountField;
+            }
+            set {
+                this.totalamountField = value;
+                this.RaisePropertyChanged("totalamount");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=93)]
+        public string totalamountuom {
+            get {
+                return this.totalamountuomField;
+            }
+            set {
+                this.totalamountuomField = value;
+                this.RaisePropertyChanged("totalamountuom");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=94)]
+        public string isopenbag {
+            get {
+                return this.isopenbagField;
+            }
+            set {
+                this.isopenbagField = value;
+                this.RaisePropertyChanged("isopenbag");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=95)]
+        public string continueinnextdept {
+            get {
+                return this.continueinnextdeptField;
+            }
+            set {
+                this.continueinnextdeptField = value;
+                this.RaisePropertyChanged("continueinnextdept");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=96)]
+        public string cancelreason {
+            get {
+                return this.cancelreasonField;
+            }
+            set {
+                this.cancelreasonField = value;
+                this.RaisePropertyChanged("cancelreason");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=97)]
+        public string statusdescription {
+            get {
+                return this.statusdescriptionField;
+            }
+            set {
+                this.statusdescriptionField = value;
+                this.RaisePropertyChanged("statusdescription");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=98)]
+        public string comments_editedby {
+            get {
+                return this.comments_editedbyField;
+            }
+            set {
+                this.comments_editedbyField = value;
+                this.RaisePropertyChanged("comments_editedby");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=99)]
+        public string comments_canceledby {
+            get {
+                return this.comments_canceledbyField;
+            }
+            set {
+                this.comments_canceledbyField = value;
+                this.RaisePropertyChanged("comments_canceledby");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=100)]
+        public string comments_date {
+            get {
+                return this.comments_dateField;
+            }
+            set {
+                this.comments_dateField = value;
+                this.RaisePropertyChanged("comments_date");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=101)]
+        public string originalamount {
+            get {
+                return this.originalamountField;
+            }
+            set {
+                this.originalamountField = value;
+                this.RaisePropertyChanged("originalamount");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=102)]
+        public string originalrate {
+            get {
+                return this.originalrateField;
+            }
+            set {
+                this.originalrateField = value;
+                this.RaisePropertyChanged("originalrate");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=103)]
+        public string n_chartdate {
+            get {
+                return this.n_chartdateField;
+            }
+            set {
+                this.n_chartdateField = value;
+                this.RaisePropertyChanged("n_chartdate");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=104)]
+        public string n_category {
+            get {
+                return this.n_categoryField;
+            }
+            set {
+                this.n_categoryField = value;
+                this.RaisePropertyChanged("n_category");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=105)]
+        public string n_description {
+            get {
+                return this.n_descriptionField;
+            }
+            set {
+                this.n_descriptionField = value;
+                this.RaisePropertyChanged("n_description");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=106)]
+        public string iserror {
+            get {
+                return this.iserrorField;
+            }
+            set {
+                this.iserrorField = value;
+                this.RaisePropertyChanged("iserror");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=107)]
+        public string text {
+            get {
+                return this.textField;
+            }
+            set {
+                this.textField = value;
+                this.RaisePropertyChanged("text");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=108)]
+        public string o_charttime {
+            get {
+                return this.o_charttimeField;
+            }
+            set {
+                this.o_charttimeField = value;
+                this.RaisePropertyChanged("o_charttime");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=109)]
+        public string o_value {
+            get {
+                return this.o_valueField;
+            }
+            set {
+                this.o_valueField = value;
+                this.RaisePropertyChanged("o_value");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=110)]
+        public string o_valueuom {
+            get {
+                return this.o_valueuomField;
+            }
+            set {
+                this.o_valueuomField = value;
+                this.RaisePropertyChanged("o_valueuom");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=111)]
+        public string o_storetime {
+            get {
+                return this.o_storetimeField;
+            }
+            set {
+                this.o_storetimeField = value;
+                this.RaisePropertyChanged("o_storetime");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=112)]
+        public string dcpt_category {
+            get {
+                return this.dcpt_categoryField;
+            }
+            set {
+                this.dcpt_categoryField = value;
+                this.RaisePropertyChanged("dcpt_category");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=113)]
+        public string sectionrange {
+            get {
+                return this.sectionrangeField;
+            }
+            set {
+                this.sectionrangeField = value;
+                this.RaisePropertyChanged("sectionrange");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=114)]
+        public string dcpt_sectionheader {
+            get {
+                return this.dcpt_sectionheaderField;
+            }
+            set {
+                this.dcpt_sectionheaderField = value;
+                this.RaisePropertyChanged("dcpt_sectionheader");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=115)]
+        public string subsectionrange {
+            get {
+                return this.subsectionrangeField;
+            }
+            set {
+                this.subsectionrangeField = value;
+                this.RaisePropertyChanged("subsectionrange");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=116)]
+        public string dcp_subsectionheader {
+            get {
+                return this.dcp_subsectionheaderField;
+            }
+            set {
+                this.dcp_subsectionheaderField = value;
+                this.RaisePropertyChanged("dcp_subsectionheader");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=117)]
+        public string codesuffix {
+            get {
+                return this.codesuffixField;
+            }
+            set {
+                this.codesuffixField = value;
+                this.RaisePropertyChanged("codesuffix");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=118)]
+        public string mincodeinsubsection {
+            get {
+                return this.mincodeinsubsectionField;
+            }
+            set {
+                this.mincodeinsubsectionField = value;
+                this.RaisePropertyChanged("mincodeinsubsection");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=119)]
+        public string maxcodeinsubsection {
+            get {
+                return this.maxcodeinsubsectionField;
+            }
+            set {
+                this.maxcodeinsubsectionField = value;
+                this.RaisePropertyChanged("maxcodeinsubsection");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=120)]
+        public string seq_num {
+            get {
+                return this.seq_numField;
+            }
+            set {
+                this.seq_numField = value;
+                this.RaisePropertyChanged("seq_num");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=121)]
+        public string icd9_code {
+            get {
+                return this.icd9_codeField;
+            }
+            set {
+                this.icd9_codeField = value;
+                this.RaisePropertyChanged("icd9_code");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=122)]
+        public string costcenter {
+            get {
+                return this.costcenterField;
+            }
+            set {
+                this.costcenterField = value;
+                this.RaisePropertyChanged("costcenter");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=123)]
+        public string cpt_cd {
+            get {
+                return this.cpt_cdField;
+            }
+            set {
+                this.cpt_cdField = value;
+                this.RaisePropertyChanged("cpt_cd");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=124)]
+        public string cpt_number {
+            get {
+                return this.cpt_numberField;
+            }
+            set {
+                this.cpt_numberField = value;
+                this.RaisePropertyChanged("cpt_number");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=125)]
+        public string cpt_suffix {
+            get {
+                return this.cpt_suffixField;
+            }
+            set {
+                this.cpt_suffixField = value;
+                this.RaisePropertyChanged("cpt_suffix");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=126)]
+        public string ticket_id_seq {
+            get {
+                return this.ticket_id_seqField;
+            }
+            set {
+                this.ticket_id_seqField = value;
+                this.RaisePropertyChanged("ticket_id_seq");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=127)]
+        public string sectionheader {
+            get {
+                return this.sectionheaderField;
+            }
+            set {
+                this.sectionheaderField = value;
+                this.RaisePropertyChanged("sectionheader");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=128)]
+        public string subsectionheader {
+            get {
+                return this.subsectionheaderField;
+            }
+            set {
+                this.subsectionheaderField = value;
+                this.RaisePropertyChanged("subsectionheader");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=129)]
+        public string cp_description {
+            get {
+                return this.cp_descriptionField;
+            }
+            set {
+                this.cp_descriptionField = value;
+                this.RaisePropertyChanged("cp_description");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=130)]
+        public string drg_type {
+            get {
+                return this.drg_typeField;
+            }
+            set {
+                this.drg_typeField = value;
+                this.RaisePropertyChanged("drg_type");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=131)]
+        public string drg_code {
+            get {
+                return this.drg_codeField;
+            }
+            set {
+                this.drg_codeField = value;
+                this.RaisePropertyChanged("drg_code");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=132)]
+        public string dr_description {
+            get {
+                return this.dr_descriptionField;
+            }
+            set {
+                this.dr_descriptionField = value;
+                this.RaisePropertyChanged("dr_description");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=133)]
+        public string drg_severity {
+            get {
+                return this.drg_severityField;
+            }
+            set {
+                this.drg_severityField = value;
+                this.RaisePropertyChanged("drg_severity");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=134)]
+        public string drg_mortality {
+            get {
+                return this.drg_mortalityField;
+            }
+            set {
+                this.drg_mortalityField = value;
+                this.RaisePropertyChanged("drg_mortality");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=135)]
+        public string l_charttime {
+            get {
+                return this.l_charttimeField;
+            }
+            set {
+                this.l_charttimeField = value;
+                this.RaisePropertyChanged("l_charttime");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=136)]
+        public string l_value {
+            get {
+                return this.l_valueField;
+            }
+            set {
+                this.l_valueField = value;
+                this.RaisePropertyChanged("l_value");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=137)]
+        public string l_valuenum {
+            get {
+                return this.l_valuenumField;
+            }
+            set {
+                this.l_valuenumField = value;
+                this.RaisePropertyChanged("l_valuenum");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=138)]
+        public string l_valueuom {
+            get {
+                return this.l_valueuomField;
+            }
+            set {
+                this.l_valueuomField = value;
+                this.RaisePropertyChanged("l_valueuom");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=139)]
+        public string l_flag {
+            get {
+                return this.l_flagField;
+            }
+            set {
+                this.l_flagField = value;
+                this.RaisePropertyChanged("l_flag");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=140)]
+        public string m_chartdate {
+            get {
+                return this.m_chartdateField;
+            }
+            set {
+                this.m_chartdateField = value;
+                this.RaisePropertyChanged("m_chartdate");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=141)]
+        public string m_charttime {
+            get {
+                return this.m_charttimeField;
+            }
+            set {
+                this.m_charttimeField = value;
+                this.RaisePropertyChanged("m_charttime");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=142)]
+        public string spec_itemid {
+            get {
+                return this.spec_itemidField;
+            }
+            set {
+                this.spec_itemidField = value;
+                this.RaisePropertyChanged("spec_itemid");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=143)]
+        public string spec_type_desc {
+            get {
+                return this.spec_type_descField;
+            }
+            set {
+                this.spec_type_descField = value;
+                this.RaisePropertyChanged("spec_type_desc");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=144)]
+        public string org_itemid {
+            get {
+                return this.org_itemidField;
+            }
+            set {
+                this.org_itemidField = value;
+                this.RaisePropertyChanged("org_itemid");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=145)]
+        public string org_name {
+            get {
+                return this.org_nameField;
+            }
+            set {
+                this.org_nameField = value;
+                this.RaisePropertyChanged("org_name");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=146)]
+        public string isolate_num {
+            get {
+                return this.isolate_numField;
+            }
+            set {
+                this.isolate_numField = value;
+                this.RaisePropertyChanged("isolate_num");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=147)]
+        public string ab_itemid {
+            get {
+                return this.ab_itemidField;
+            }
+            set {
+                this.ab_itemidField = value;
+                this.RaisePropertyChanged("ab_itemid");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=148)]
+        public string ab_name {
+            get {
+                return this.ab_nameField;
+            }
+            set {
+                this.ab_nameField = value;
+                this.RaisePropertyChanged("ab_name");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=149)]
+        public string dilution_text {
+            get {
+                return this.dilution_textField;
+            }
+            set {
+                this.dilution_textField = value;
+                this.RaisePropertyChanged("dilution_text");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=150)]
+        public string dilution_comparison {
+            get {
+                return this.dilution_comparisonField;
+            }
+            set {
+                this.dilution_comparisonField = value;
+                this.RaisePropertyChanged("dilution_comparison");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=151)]
+        public string dilution_value {
+            get {
+                return this.dilution_valueField;
+            }
+            set {
+                this.dilution_valueField = value;
+                this.RaisePropertyChanged("dilution_value");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=152)]
+        public string interpretation {
+            get {
+                return this.interpretationField;
+            }
+            set {
+                this.interpretationField = value;
+                this.RaisePropertyChanged("interpretation");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=153)]
+        public string startdate {
+            get {
+                return this.startdateField;
+            }
+            set {
+                this.startdateField = value;
+                this.RaisePropertyChanged("startdate");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=154)]
+        public string enddate {
+            get {
+                return this.enddateField;
+            }
+            set {
+                this.enddateField = value;
+                this.RaisePropertyChanged("enddate");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=155)]
+        public string drug_type {
+            get {
+                return this.drug_typeField;
+            }
+            set {
+                this.drug_typeField = value;
+                this.RaisePropertyChanged("drug_type");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=156)]
+        public string drug {
+            get {
+                return this.drugField;
+            }
+            set {
+                this.drugField = value;
+                this.RaisePropertyChanged("drug");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=157)]
+        public string drug_name_poe {
+            get {
+                return this.drug_name_poeField;
+            }
+            set {
+                this.drug_name_poeField = value;
+                this.RaisePropertyChanged("drug_name_poe");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=158)]
+        public string drug_name_generic {
+            get {
+                return this.drug_name_genericField;
+            }
+            set {
+                this.drug_name_genericField = value;
+                this.RaisePropertyChanged("drug_name_generic");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=159)]
+        public string formulary_drug_cd {
+            get {
+                return this.formulary_drug_cdField;
+            }
+            set {
+                this.formulary_drug_cdField = value;
+                this.RaisePropertyChanged("formulary_drug_cd");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=160)]
+        public string gsn {
+            get {
+                return this.gsnField;
+            }
+            set {
+                this.gsnField = value;
+                this.RaisePropertyChanged("gsn");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=161)]
+        public string ndc {
+            get {
+                return this.ndcField;
+            }
+            set {
+                this.ndcField = value;
+                this.RaisePropertyChanged("ndc");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=162)]
+        public string prod_strength {
+            get {
+                return this.prod_strengthField;
+            }
+            set {
+                this.prod_strengthField = value;
+                this.RaisePropertyChanged("prod_strength");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=163)]
+        public string dose_val_rx {
+            get {
+                return this.dose_val_rxField;
+            }
+            set {
+                this.dose_val_rxField = value;
+                this.RaisePropertyChanged("dose_val_rx");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=164)]
+        public string dose_unit_rx {
+            get {
+                return this.dose_unit_rxField;
+            }
+            set {
+                this.dose_unit_rxField = value;
+                this.RaisePropertyChanged("dose_unit_rx");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=165)]
+        public string form_val_disp {
+            get {
+                return this.form_val_dispField;
+            }
+            set {
+                this.form_val_dispField = value;
+                this.RaisePropertyChanged("form_val_disp");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=166)]
+        public string form_unit_disp {
+            get {
+                return this.form_unit_dispField;
+            }
+            set {
+                this.form_unit_dispField = value;
+                this.RaisePropertyChanged("form_unit_disp");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=167)]
+        public string route {
+            get {
+                return this.routeField;
+            }
+            set {
+                this.routeField = value;
+                this.RaisePropertyChanged("route");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=168)]
+        public string short_title {
+            get {
+                return this.short_titleField;
+            }
+            set {
+                this.short_titleField = value;
+                this.RaisePropertyChanged("short_title");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=169)]
+        public string long_title {
+            get {
+                return this.long_titleField;
+            }
+            set {
+                this.long_titleField = value;
+                this.RaisePropertyChanged("long_title");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=170)]
+        public string d_p_short_title {
+            get {
+                return this.d_p_short_titleField;
+            }
+            set {
+                this.d_p_short_titleField = value;
+                this.RaisePropertyChanged("d_p_short_title");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=171)]
+        public string d_p_long_title {
+            get {
+                return this.d_p_long_titleField;
+            }
+            set {
+                this.d_p_long_titleField = value;
+                this.RaisePropertyChanged("d_p_long_title");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=172)]
+        public string d_l_label {
+            get {
+                return this.d_l_labelField;
+            }
+            set {
+                this.d_l_labelField = value;
+                this.RaisePropertyChanged("d_l_label");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=173)]
+        public string fluid {
+            get {
+                return this.fluidField;
+            }
+            set {
+                this.fluidField = value;
+                this.RaisePropertyChanged("fluid");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=174)]
+        public string d_l_category {
+            get {
+                return this.d_l_categoryField;
+            }
+            set {
+                this.d_l_categoryField = value;
+                this.RaisePropertyChanged("d_l_category");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=175)]
+        public string loinc_code {
+            get {
+                return this.loinc_codeField;
+            }
+            set {
+                this.loinc_codeField = value;
+                this.RaisePropertyChanged("loinc_code");
+            }
+        }
+        
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         protected void RaisePropertyChanged(string propertyName) {
@@ -598,20 +2562,24 @@ namespace MIMIC.PatientsService {
             return base.Channel.SelectPatients(patients);
         }
         
-        public System.Data.DataTable SearchPatients() {
-            return base.Channel.SearchPatients();
-        }
-        
         public System.Data.DataTable ICUSelectPatients(MIMIC.PatientsService.Patients patients) {
             return base.Channel.ICUSelectPatients(patients);
         }
         
-        public System.Data.DataTable SearchICUPatients() {
-            return base.Channel.SearchICUPatients();
-        }
-        
         public System.Data.DataTable CaseSelect(MIMIC.PatientsService.Patients patients) {
             return base.Channel.CaseSelect(patients);
+        }
+        
+        public System.Data.DataTable SearchPatients() {
+            return base.Channel.SearchPatients();
+        }
+        
+        public System.Data.DataTable SearchPatients1() {
+            return base.Channel.SearchPatients1();
+        }
+        
+        public System.Data.DataTable SearchPatients2() {
+            return base.Channel.SearchPatients2();
         }
     }
 }

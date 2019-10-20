@@ -326,7 +326,7 @@
             this.ClientSize = new System.Drawing.Size(825, 479);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmICUPatientsSelect";
-            this.TabText = "FrmICUPatientsSelect";
+            this.TabText = "ICU查询";
             this.Text = "ICU查询";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
