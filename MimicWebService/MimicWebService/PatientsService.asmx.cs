@@ -151,7 +151,7 @@ namespace MimicWebService
                             INNER JOIN services s ON s.subject_id =p.subject_id 
                             INNER JOIN transfers t ON t.subject_id =p.subject_id
                             INNER JOIN noteevents n   ON n.subject_id =p.subject_id
-                        limit 10";//limit 5 
+                        LIMIT 5";
             //执行SQL语句
             DataTable dt = new DataTable();
             DataSet ds = new DataSet();
@@ -161,13 +161,12 @@ namespace MimicWebService
             return dt;
         }
 
-
         [WebMethod]
         public DataTable SearchPatients1()
         {
             DBConn dbconn = new DBConn();//实例化连接数据库的对象
             NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
-            string strSQL = @"SET search_path TO mimiciii;
+                string strSQL = @"SET search_path TO mimiciii;
                         SELECT p.subject_id,
                             incv.amount,incv.amountuom,incv.rate,incv.orderid,incv.linkorderid,incv.stopped,incv.newbottle,
                             in_mv.ordercategoryname,in_mv.secondaryordercategoryname,in_mv.ordercomponenttypedescription,in_mv.ordercategorydescription,in_mv.patientweight,
@@ -186,7 +185,8 @@ namespace MimicWebService
                                         INNER JOIN d_icd_procedures d_p ON d_p.icd9_code=pr_i.icd9_code
                             INNER JOIN cptevents cp ON cp.subject_id =p.subject_id
                                         INNer JOIN d_cpt dcpt ON (cp.cpt_number BETWEEN dcpt.mincodeinsubsection AND dcpt.maxcodeinsubsection)
-                        limit 100";//limit 5
+                        LIMIT 5";
+            
             //执行SQL语句
             DataTable dt = new DataTable();
             DataSet ds = new DataSet();
@@ -221,7 +221,7 @@ namespace MimicWebService
                             INNER JOIN icustays i ON i.subject_id = p.subject_id 
                             INNER JOIN diagnoses_icd dia ON dia.subject_id =p.subject_id
                                         INNER JOIN d_icd_diagnoses d_d ON d_d.icd9_code=dia.icd9_code
-                         limit 100";//limit 5
+                        LIMIT 5";
             //执行SQL语句
             DataTable dt = new DataTable();
             DataSet ds = new DataSet();
@@ -231,6 +231,398 @@ namespace MimicWebService
             return dt;
         }
 
+
+        [WebMethod]
+        public DataTable SearchTable1()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM admissions limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        [WebMethod]
+        public DataTable SearchTable2()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM callout limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        [WebMethod]
+        public DataTable SearchTable3()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM icustays limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        [WebMethod]
+        public DataTable SearchTable4()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM patients limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        [WebMethod]
+        public DataTable SearchTable5()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM services limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        [WebMethod]
+        public DataTable SearchTable6()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM transfers limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        [WebMethod]
+        public DataTable SearchTable7()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM caregivers limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        [WebMethod]
+        public DataTable SearchTable8()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM chartevents limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        [WebMethod]
+        public DataTable SearchTable9()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM datetimeevents limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        [WebMethod]
+        public DataTable SearchTable10()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM inputevents_cv limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        [WebMethod]
+        public DataTable SearchTable11()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM inputevents_mv limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        [WebMethod]
+        public DataTable SearchTable12()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM noteevents limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        [WebMethod]
+        public DataTable SearchTable13()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM outputevents limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        [WebMethod]
+        public DataTable SearchTable14()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM procedureevents_mv limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        [WebMethod]
+        public DataTable SearchTable15()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM cptevents limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        [WebMethod]
+        public DataTable SearchTable16()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM diagnoses_icd limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        [WebMethod]
+        public DataTable SearchTable17()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM drgcodes limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        [WebMethod]
+        public DataTable SearchTable18()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM labevents limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        [WebMethod]
+        public DataTable SearchTable19()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM microbiologyevents limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        [WebMethod]
+        public DataTable SearchTable20()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM prescriptions limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        [WebMethod]
+        public DataTable SearchTable21()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM procedures_icd limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        [WebMethod]
+        public DataTable SearchTable22()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM d_cpt limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        [WebMethod]
+        public DataTable SearchTable23()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM d_icd_diagnoses limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        [WebMethod]
+        public DataTable SearchTable24()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM d_icd_procedures limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+            
+         [WebMethod]
+        public DataTable SearchTable25()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM d_items limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+         [WebMethod]
+        public DataTable SearchTable26()
+        {
+            DBConn dbconn = new DBConn();//实例化连接数据库的对象
+            NpgsqlConnection conn = dbconn.OpenConn();//调用对象的打开数据库方法
+            string strSQL = @"SET search_path TO mimiciii; SELECT * FROM d_labitems limit 100000";
+            //执行SQL语句
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(strSQL, conn); //实例化NpsqlCommand对象
+            da.Fill(ds, "patients");//填充数据源（表的容器）
+            dt = ds.Tables["patients"];//获取数据源中的表
+            return dt;
+        }
+
+        
         //Model对象
         //对应是表
         //表中的每一列都对应一个属性

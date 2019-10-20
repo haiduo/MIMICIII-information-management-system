@@ -12,7 +12,6 @@ namespace MIMIC
 {
     public partial class FrmMain : Form
     {
-        public static string user_id;
         public FrmMain()
         {
             InitializeComponent();
@@ -20,7 +19,7 @@ namespace MIMIC
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
-            toolStripStatusLabel_User.Text = user_id;//获取当前用户信息
+            toolStripStatusLabel1.Text =FrmLogin.user_id;//获取当前用户信息
             FrmMenu menu = new FrmMenu();
             menu.Show(dockPanel1, DockState.DockLeft);//菜单栏显示在dockpanel的左边
             dockPanel1.DockLeftPortion = 240;//菜单栏初始的宽度（像素）

@@ -3,9 +3,9 @@
   <publishProfile publishUrl="D:\MIMICIII-information-management-system\MimicWebService\setup" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
     <file relUrl="bin/Mono.Security.dll" publishTime="09/24/2019 17:07:33" />
     <file relUrl="bin/Npgsql.dll" publishTime="09/24/2019 17:07:33" />
-    <file relUrl="bin/MimicWebService.dll" publishTime="10/20/2019 01:14:41" />
-    <file relUrl="Web.config" publishTime="10/20/2019 01:14:44" />
-    <file relUrl="bin/MimicWebService.pdb" publishTime="10/20/2019 01:14:41" />
+    <file relUrl="bin/MimicWebService.dll" publishTime="10/20/2019 17:19:14" />
+    <file relUrl="Web.config" publishTime="10/20/2019 17:19:18" />
+    <file relUrl="bin/MimicWebService.pdb" publishTime="10/20/2019 17:19:14" />
     <file relUrl="PatientsService.asmx" publishTime="10/11/2019 21:30:10" />
     <file relUrl="UserinfoService.asmx" publishTime="10/11/2019 22:13:27" />
   </publishProfile>

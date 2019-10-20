@@ -71,5 +71,175 @@ namespace MIMIC
 
         }
 
+        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            switch (e.Node.Index)//字符串
+            {
+                case 0:
+                    {
+                        Table1 search = new Table1();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+                case 1:
+                    {
+                        Table2 search = new Table2();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+                case 2:
+                    {
+                        Table3 search = new Table3();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+                case 3:
+                    {
+                        Table4 search = new Table4();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+                case 4:
+                    {
+                        Table5 search = new Table5();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+                case 5:
+                    {
+                        Table6 search = new Table6();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+                case 6:
+                    {
+                        Table7 search = new Table7();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+                case 7:
+                    {
+                        Table8 search = new Table8();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+                case 8:
+                    {
+                        Table9 search = new Table9();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+                case 9:
+                    {
+                        Table10 search = new Table10();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+                case 10:
+                    {
+                        Table11 search = new Table11();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+                case 11:
+                    {
+                        Table12 search = new Table12();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+                case 12:
+                    {
+                        Table13 search = new Table13();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+                case 13:
+                    {
+                        Table14 search = new Table14();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+                case 14:
+                    {
+                        Table15 search = new Table15();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+                case 15:
+                    {
+                        Table16 search = new Table16();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+                case 16:
+                    {
+                        Table17 search = new Table17();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+                case 17:
+                    {
+                        Table18 search = new Table18();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+                case 18:
+                    {
+                        Table19 search = new Table19();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+                case 19:
+                    {
+                        Table20 search = new Table20();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+                case 20:
+                    {
+                        Table21 search = new Table21();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+                case 21:
+                    {
+                        Table22 search = new Table22();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+                case 22:
+                    {
+                        Table23 search = new Table23();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+                case 23:
+                    {
+                        Table24 search = new Table24();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+                case 24:
+                    {
+                        Table25 search = new Table25();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+                case 25:
+                    {
+                        Table26 search = new Table26();//实例化子窗体
+                        OpenForm(search);
+                    }
+                    break;
+            }
+
+        }
+
+        private void FrmMenu_Load(object sender, EventArgs e)
+        {
+            treeView1.LabelEdit = true;//可编辑状态
+            treeView1.ExpandAll();
+        }
+
     }
 }

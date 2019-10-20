@@ -15,11 +15,11 @@ namespace MIMIC
 		{
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //FrmLogin frmlogin = new FrmLogin();
-            //if (frmlogin.ShowDialog() == DialogResult.OK)
-            //{
-            Application.Run(new FrmMain());
-            //}
+            FrmLogin frmlogin = new FrmLogin();
+            if (frmlogin.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new FrmMain());
+            }
 		}
 
         /// <summary>

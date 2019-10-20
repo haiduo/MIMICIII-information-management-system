@@ -167,6 +167,162 @@
     <Compile Include="FrmPatientsSearch2.Designer.cs">
       <DependentUpon>FrmPatientsSearch2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Table1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table1.Designer.cs">
+      <DependentUpon>Table1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table2.Designer.cs">
+      <DependentUpon>Table2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table3.Designer.cs">
+      <DependentUpon>Table3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table4.Designer.cs">
+      <DependentUpon>Table4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table5.Designer.cs">
+      <DependentUpon>Table5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table6.Designer.cs">
+      <DependentUpon>Table6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table7.Designer.cs">
+      <DependentUpon>Table7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table8.Designer.cs">
+      <DependentUpon>Table8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table9.Designer.cs">
+      <DependentUpon>Table9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table11.Designer.cs">
+      <DependentUpon>Table11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table10.Designer.cs">
+      <DependentUpon>Table10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table12.Designer.cs">
+      <DependentUpon>Table12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table13.Designer.cs">
+      <DependentUpon>Table13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table14.Designer.cs">
+      <DependentUpon>Table14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table15.Designer.cs">
+      <DependentUpon>Table15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table16.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table16.Designer.cs">
+      <DependentUpon>Table16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table17.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table17.Designer.cs">
+      <DependentUpon>Table17.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table18.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table18.Designer.cs">
+      <DependentUpon>Table18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table19.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table19.Designer.cs">
+      <DependentUpon>Table19.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table21.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table21.Designer.cs">
+      <DependentUpon>Table21.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table22.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table22.Designer.cs">
+      <DependentUpon>Table22.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table23.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table23.Designer.cs">
+      <DependentUpon>Table23.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table24.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table24.Designer.cs">
+      <DependentUpon>Table24.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table25.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table25.Designer.cs">
+      <DependentUpon>Table25.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table20.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table20.Designer.cs">
+      <DependentUpon>Table20.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table26.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table26.Designer.cs">
+      <DependentUpon>Table26.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmCaseSelect.resx">
       <DependentUpon>FrmCaseSelect.cs</DependentUpon>
     </EmbeddedResource>
@@ -217,6 +373,84 @@
     </Compile>
     <EmbeddedResource Include="FrmPatientsSearch2.resx">
       <DependentUpon>FrmPatientsSearch2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table1.resx">
+      <DependentUpon>Table1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table2.resx">
+      <DependentUpon>Table2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table3.resx">
+      <DependentUpon>Table3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table4.resx">
+      <DependentUpon>Table4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table5.resx">
+      <DependentUpon>Table5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table6.resx">
+      <DependentUpon>Table6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table7.resx">
+      <DependentUpon>Table7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table8.resx">
+      <DependentUpon>Table8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table9.resx">
+      <DependentUpon>Table9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table11.resx">
+      <DependentUpon>Table11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table10.resx">
+      <DependentUpon>Table10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table12.resx">
+      <DependentUpon>Table12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table13.resx">
+      <DependentUpon>Table13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table14.resx">
+      <DependentUpon>Table14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table15.resx">
+      <DependentUpon>Table15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table16.resx">
+      <DependentUpon>Table16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table17.resx">
+      <DependentUpon>Table17.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table18.resx">
+      <DependentUpon>Table18.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table19.resx">
+      <DependentUpon>Table19.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table21.resx">
+      <DependentUpon>Table21.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table22.resx">
+      <DependentUpon>Table22.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table23.resx">
+      <DependentUpon>Table23.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table24.resx">
+      <DependentUpon>Table24.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table25.resx">
+      <DependentUpon>Table25.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table20.resx">
+      <DependentUpon>Table20.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table26.resx">
+      <DependentUpon>Table26.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config">
       <SubType>Designer</SubType>

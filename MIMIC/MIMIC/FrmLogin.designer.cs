@@ -121,6 +121,7 @@
             this.Controls.Add(this.lbIUser);
             this.Controls.Add(this.btnNo);
             this.Controls.Add(this.btnYes);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "FrmLogin";

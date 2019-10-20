@@ -39,7 +39,7 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel_User = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabelGroup = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.dockPanel1 = new WeifenLuo.WinFormsUI.Docking.DockPanel();
             this.menuStrip.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -113,7 +113,7 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel_User,
-            this.toolStripStatusLabelGroup});
+            this.toolStripStatusLabel1});
             this.statusStrip1.Location = new System.Drawing.Point(0, 419);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(891, 22);
@@ -123,14 +123,14 @@
             // toolStripStatusLabel_User
             // 
             this.toolStripStatusLabel_User.Name = "toolStripStatusLabel_User";
-            this.toolStripStatusLabel_User.Size = new System.Drawing.Size(56, 17);
-            this.toolStripStatusLabel_User.Text = "用户信息";
+            this.toolStripStatusLabel_User.Size = new System.Drawing.Size(44, 17);
+            this.toolStripStatusLabel_User.Text = "用户：";
             // 
-            // toolStripStatusLabelGroup
+            // toolStripStatusLabel1
             // 
-            this.toolStripStatusLabelGroup.Name = "toolStripStatusLabelGroup";
-            this.toolStripStatusLabelGroup.Size = new System.Drawing.Size(131, 17);
-            this.toolStripStatusLabelGroup.Text = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(131, 17);
+            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
             // 
             // dockPanel1
             // 
@@ -182,6 +182,6 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel_User;
         public WeifenLuo.WinFormsUI.Docking.DockPanel dockPanel1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelGroup;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }

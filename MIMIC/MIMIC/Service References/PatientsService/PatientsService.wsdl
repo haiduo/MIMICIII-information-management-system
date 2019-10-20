@@ -306,6 +306,448 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="SearchTable1">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable1Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTable2">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable2Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTable3">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable3Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTable4">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable4Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable4Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTable5">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable5Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable5Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTable6">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable6Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable6Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTable7">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable7Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable7Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTable8">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable8Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable8Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTable9">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable9Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable9Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTable10">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable10Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable10Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTable11">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable11Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable11Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTable12">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable12Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable12Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTable13">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable13Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable13Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTable14">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable14Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable14Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTable15">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable15Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable15Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTable16">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable16Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable16Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTable17">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable17Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable17Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTable18">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable18Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable18Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTable19">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable19Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable19Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTable20">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable20Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable20Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTable21">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable21Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable21Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTable22">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable22Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable22Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTable23">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable23Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable23Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTable24">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable24Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable24Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTable25">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable25Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable25Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTable26">
+        <s:complexType />
+      </s:element>
+      <s:element name="SearchTable26Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTable26Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
     </s:schema>
   </wsdl:types>
   <wsdl:message name="HelloWorldSoapIn">
@@ -350,6 +792,162 @@
   <wsdl:message name="SearchPatients2SoapOut">
     <wsdl:part name="parameters" element="tns:SearchPatients2Response" />
   </wsdl:message>
+  <wsdl:message name="SearchTable1SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable1" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable1SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable1Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable2SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable2" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable2SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable2Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable3SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable3" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable3SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable3Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable4SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable4" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable4SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable4Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable5SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable5" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable5SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable5Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable6SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable6" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable6SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable6Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable7SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable7" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable7SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable7Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable8SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable8" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable8SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable8Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable9SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable9" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable9SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable9Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable10SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable10" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable10SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable10Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable11SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable11" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable11SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable11Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable12SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable12" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable12SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable12Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable13SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable13" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable13SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable13Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable14SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable14" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable14SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable14Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable15SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable15" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable15SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable15Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable16SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable16" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable16SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable16Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable17SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable17" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable17SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable17Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable18SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable18" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable18SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable18Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable19SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable19" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable19SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable19Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable20SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable20" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable20SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable20Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable21SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable21" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable21SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable21Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable22SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable22" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable22SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable22Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable23SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable23" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable23SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable23Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable24SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable24" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable24SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable24Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable25SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable25" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable25SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable25Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable26SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTable26" />
+  </wsdl:message>
+  <wsdl:message name="SearchTable26SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTable26Response" />
+  </wsdl:message>
   <wsdl:portType name="PatientsServiceSoap">
     <wsdl:operation name="HelloWorld">
       <wsdl:input message="tns:HelloWorldSoapIn" />
@@ -378,6 +976,110 @@
     <wsdl:operation name="SearchPatients2">
       <wsdl:input message="tns:SearchPatients2SoapIn" />
       <wsdl:output message="tns:SearchPatients2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable1">
+      <wsdl:input message="tns:SearchTable1SoapIn" />
+      <wsdl:output message="tns:SearchTable1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable2">
+      <wsdl:input message="tns:SearchTable2SoapIn" />
+      <wsdl:output message="tns:SearchTable2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable3">
+      <wsdl:input message="tns:SearchTable3SoapIn" />
+      <wsdl:output message="tns:SearchTable3SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable4">
+      <wsdl:input message="tns:SearchTable4SoapIn" />
+      <wsdl:output message="tns:SearchTable4SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable5">
+      <wsdl:input message="tns:SearchTable5SoapIn" />
+      <wsdl:output message="tns:SearchTable5SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable6">
+      <wsdl:input message="tns:SearchTable6SoapIn" />
+      <wsdl:output message="tns:SearchTable6SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable7">
+      <wsdl:input message="tns:SearchTable7SoapIn" />
+      <wsdl:output message="tns:SearchTable7SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable8">
+      <wsdl:input message="tns:SearchTable8SoapIn" />
+      <wsdl:output message="tns:SearchTable8SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable9">
+      <wsdl:input message="tns:SearchTable9SoapIn" />
+      <wsdl:output message="tns:SearchTable9SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable10">
+      <wsdl:input message="tns:SearchTable10SoapIn" />
+      <wsdl:output message="tns:SearchTable10SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable11">
+      <wsdl:input message="tns:SearchTable11SoapIn" />
+      <wsdl:output message="tns:SearchTable11SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable12">
+      <wsdl:input message="tns:SearchTable12SoapIn" />
+      <wsdl:output message="tns:SearchTable12SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable13">
+      <wsdl:input message="tns:SearchTable13SoapIn" />
+      <wsdl:output message="tns:SearchTable13SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable14">
+      <wsdl:input message="tns:SearchTable14SoapIn" />
+      <wsdl:output message="tns:SearchTable14SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable15">
+      <wsdl:input message="tns:SearchTable15SoapIn" />
+      <wsdl:output message="tns:SearchTable15SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable16">
+      <wsdl:input message="tns:SearchTable16SoapIn" />
+      <wsdl:output message="tns:SearchTable16SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable17">
+      <wsdl:input message="tns:SearchTable17SoapIn" />
+      <wsdl:output message="tns:SearchTable17SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable18">
+      <wsdl:input message="tns:SearchTable18SoapIn" />
+      <wsdl:output message="tns:SearchTable18SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable19">
+      <wsdl:input message="tns:SearchTable19SoapIn" />
+      <wsdl:output message="tns:SearchTable19SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable20">
+      <wsdl:input message="tns:SearchTable20SoapIn" />
+      <wsdl:output message="tns:SearchTable20SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable21">
+      <wsdl:input message="tns:SearchTable21SoapIn" />
+      <wsdl:output message="tns:SearchTable21SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable22">
+      <wsdl:input message="tns:SearchTable22SoapIn" />
+      <wsdl:output message="tns:SearchTable22SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable23">
+      <wsdl:input message="tns:SearchTable23SoapIn" />
+      <wsdl:output message="tns:SearchTable23SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable24">
+      <wsdl:input message="tns:SearchTable24SoapIn" />
+      <wsdl:output message="tns:SearchTable24SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable25">
+      <wsdl:input message="tns:SearchTable25SoapIn" />
+      <wsdl:output message="tns:SearchTable25SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable26">
+      <wsdl:input message="tns:SearchTable26SoapIn" />
+      <wsdl:output message="tns:SearchTable26SoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="PatientsServiceSoap" type="tns:PatientsServiceSoap">
@@ -445,6 +1147,240 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="SearchTable1">
+      <soap:operation soapAction="http://tempuri.org/SearchTable1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable2">
+      <soap:operation soapAction="http://tempuri.org/SearchTable2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable3">
+      <soap:operation soapAction="http://tempuri.org/SearchTable3" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable4">
+      <soap:operation soapAction="http://tempuri.org/SearchTable4" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable5">
+      <soap:operation soapAction="http://tempuri.org/SearchTable5" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable6">
+      <soap:operation soapAction="http://tempuri.org/SearchTable6" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable7">
+      <soap:operation soapAction="http://tempuri.org/SearchTable7" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable8">
+      <soap:operation soapAction="http://tempuri.org/SearchTable8" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable9">
+      <soap:operation soapAction="http://tempuri.org/SearchTable9" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable10">
+      <soap:operation soapAction="http://tempuri.org/SearchTable10" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable11">
+      <soap:operation soapAction="http://tempuri.org/SearchTable11" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable12">
+      <soap:operation soapAction="http://tempuri.org/SearchTable12" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable13">
+      <soap:operation soapAction="http://tempuri.org/SearchTable13" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable14">
+      <soap:operation soapAction="http://tempuri.org/SearchTable14" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable15">
+      <soap:operation soapAction="http://tempuri.org/SearchTable15" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable16">
+      <soap:operation soapAction="http://tempuri.org/SearchTable16" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable17">
+      <soap:operation soapAction="http://tempuri.org/SearchTable17" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable18">
+      <soap:operation soapAction="http://tempuri.org/SearchTable18" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable19">
+      <soap:operation soapAction="http://tempuri.org/SearchTable19" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable20">
+      <soap:operation soapAction="http://tempuri.org/SearchTable20" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable21">
+      <soap:operation soapAction="http://tempuri.org/SearchTable21" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable22">
+      <soap:operation soapAction="http://tempuri.org/SearchTable22" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable23">
+      <soap:operation soapAction="http://tempuri.org/SearchTable23" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable24">
+      <soap:operation soapAction="http://tempuri.org/SearchTable24" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable25">
+      <soap:operation soapAction="http://tempuri.org/SearchTable25" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable26">
+      <soap:operation soapAction="http://tempuri.org/SearchTable26" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="PatientsServiceSoap12" type="tns:PatientsServiceSoap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
@@ -504,6 +1440,240 @@
     </wsdl:operation>
     <wsdl:operation name="SearchPatients2">
       <soap12:operation soapAction="http://tempuri.org/SearchPatients2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable1">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable2">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable3">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable3" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable4">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable4" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable5">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable5" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable6">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable6" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable7">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable7" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable8">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable8" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable9">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable9" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable10">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable10" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable11">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable11" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable12">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable12" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable13">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable13" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable14">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable14" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable15">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable15" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable16">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable16" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable17">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable17" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable18">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable18" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable19">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable19" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable20">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable20" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable21">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable21" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable22">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable22" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable23">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable23" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable24">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable24" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable25">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable25" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTable26">
+      <soap12:operation soapAction="http://tempuri.org/SearchTable26" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

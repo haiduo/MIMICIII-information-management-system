@@ -43,6 +43,110 @@ namespace MIMIC.PatientsService {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchPatients2", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Data.DataTable SearchPatients2();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable1", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable1();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable2", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable2();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable3", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable3();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable4", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable4();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable5", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable5();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable6", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable6();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable7", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable7();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable8", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable8();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable9", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable9();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable10", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable10();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable11", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable11();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable12", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable12();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable13", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable13();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable14", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable14();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable15", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable15();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable16", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable16();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable17", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable17();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable18", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable18();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable19", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable19();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable20", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable20();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable21", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable21();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable22", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable22();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable23", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable23();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable24", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable24();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable25", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable25();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchTable26", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable SearchTable26();
     }
     
     /// <remarks/>
@@ -2580,6 +2684,110 @@ namespace MIMIC.PatientsService {
         
         public System.Data.DataTable SearchPatients2() {
             return base.Channel.SearchPatients2();
+        }
+        
+        public System.Data.DataTable SearchTable1() {
+            return base.Channel.SearchTable1();
+        }
+        
+        public System.Data.DataTable SearchTable2() {
+            return base.Channel.SearchTable2();
+        }
+        
+        public System.Data.DataTable SearchTable3() {
+            return base.Channel.SearchTable3();
+        }
+        
+        public System.Data.DataTable SearchTable4() {
+            return base.Channel.SearchTable4();
+        }
+        
+        public System.Data.DataTable SearchTable5() {
+            return base.Channel.SearchTable5();
+        }
+        
+        public System.Data.DataTable SearchTable6() {
+            return base.Channel.SearchTable6();
+        }
+        
+        public System.Data.DataTable SearchTable7() {
+            return base.Channel.SearchTable7();
+        }
+        
+        public System.Data.DataTable SearchTable8() {
+            return base.Channel.SearchTable8();
+        }
+        
+        public System.Data.DataTable SearchTable9() {
+            return base.Channel.SearchTable9();
+        }
+        
+        public System.Data.DataTable SearchTable10() {
+            return base.Channel.SearchTable10();
+        }
+        
+        public System.Data.DataTable SearchTable11() {
+            return base.Channel.SearchTable11();
+        }
+        
+        public System.Data.DataTable SearchTable12() {
+            return base.Channel.SearchTable12();
+        }
+        
+        public System.Data.DataTable SearchTable13() {
+            return base.Channel.SearchTable13();
+        }
+        
+        public System.Data.DataTable SearchTable14() {
+            return base.Channel.SearchTable14();
+        }
+        
+        public System.Data.DataTable SearchTable15() {
+            return base.Channel.SearchTable15();
+        }
+        
+        public System.Data.DataTable SearchTable16() {
+            return base.Channel.SearchTable16();
+        }
+        
+        public System.Data.DataTable SearchTable17() {
+            return base.Channel.SearchTable17();
+        }
+        
+        public System.Data.DataTable SearchTable18() {
+            return base.Channel.SearchTable18();
+        }
+        
+        public System.Data.DataTable SearchTable19() {
+            return base.Channel.SearchTable19();
+        }
+        
+        public System.Data.DataTable SearchTable20() {
+            return base.Channel.SearchTable20();
+        }
+        
+        public System.Data.DataTable SearchTable21() {
+            return base.Channel.SearchTable21();
+        }
+        
+        public System.Data.DataTable SearchTable22() {
+            return base.Channel.SearchTable22();
+        }
+        
+        public System.Data.DataTable SearchTable23() {
+            return base.Channel.SearchTable23();
+        }
+        
+        public System.Data.DataTable SearchTable24() {
+            return base.Channel.SearchTable24();
+        }
+        
+        public System.Data.DataTable SearchTable25() {
+            return base.Channel.SearchTable25();
+        }
+        
+        public System.Data.DataTable SearchTable26() {
+            return base.Channel.SearchTable26();
         }
     }
 }

@@ -55,9 +55,10 @@ namespace MIMIC
             }
         }
 
+        public static string user_id;//保存用户名
         private void Login()
         {
-            string user_id = txtUser.Text.Trim();
+            user_id = txtUser.Text.Trim();
             string user_pwd = Program.md5(txtPwd.Text);
             //获取本地IP地址
             string ip_addr =string.Empty ;//局部变量记得赋值
